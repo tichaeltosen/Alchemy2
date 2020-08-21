@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 9e92ae35ef5404478acbaa6ec2c90e57
+=======
+<<<<<<< HEAD:Assets/Scripts/Unused/ActivateElement 2.cs.meta
+guid: 8cfa56bffdaec4cbb8539c482cc29bae
+=======
+guid: 9e92ae35ef5404478acbaa6ec2c90e57
+>>>>>>> parent of 3d6de73... Revert "getting ready to do crafting":Assets/Scripts/ChosenElement.cs.meta
+>>>>>>> parent of 3d6de73... Revert "getting ready to do crafting"
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

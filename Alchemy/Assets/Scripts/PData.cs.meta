@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: fb0643d3bf3ba48b4b442a4db18bae8a
+=======
+<<<<<<< HEAD:Assets/Scripts/Unused/PotionDatabase 2.cs.meta
+guid: 54b4216198c5a42b998fab10b7a03ac3
+=======
+guid: fb0643d3bf3ba48b4b442a4db18bae8a
+>>>>>>> parent of 3d6de73... Revert "getting ready to do crafting":Assets/Scripts/PData.cs.meta
+>>>>>>> parent of 3d6de73... Revert "getting ready to do crafting"
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
