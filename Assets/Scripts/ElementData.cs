@@ -5,6 +5,7 @@ using UnityEngine;
 public class ElementData : MonoBehaviour
 {
     public List<string> elementList;
+    public List<string> chosenElements = new List<string>();
     public static ElementData instance;
 
     GameObject[] elements;
@@ -25,21 +26,13 @@ public class ElementData : MonoBehaviour
             if (e.activeSelf)
             {
                 elementList.Add(e.name);
-                Debug.Log("Active Elements:" + e.name + "Count:" + elementList.Count);
+               // Debug.Log("Active Elements:" + e.name + "Count:" + elementList.Count);
 
             }
         }
 
 
     }
-
-
-    public bool Test()
-    {
-        return true;
-    }
-
- 
 
     public bool FindElement(string name)
     {
