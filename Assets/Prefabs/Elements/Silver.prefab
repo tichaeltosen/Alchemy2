@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 451560}
   - component: {fileID: 3308840}
   - component: {fileID: 2380810}
-  m_Layer: 0
+  - component: {fileID: -6965272788743975145}
+  - component: {fileID: -2556806014605747239}
+  - component: {fileID: 4540556360550615672}
+  m_Layer: 8
   m_Name: Silver
-  m_TagString: Untagged
+  m_TagString: Element
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119512}
-  m_LocalRotation: {x: 0.0000000218557, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -79,3 +82,50 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &-6965272788743975145
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2151852, y: 0.85753477, z: 1.1476779}
+  m_Center: {x: 0.084005564, y: 0.28504598, z: -0.009593248}
+--- !u!114 &-2556806014605747239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c1c95414758a4ecd9996102fa29a48a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Silver
+  chosenElement: {fileID: 2229515403186251056, guid: 93de443646b384012a3f73ed4a216ac2,
+    type: 3}
+  potionTable1: {fileID: 0}
+  potionTable2: {fileID: 0}
+  element: 1
+  potion: 0
+  book: 0
+--- !u!114 &4540556360550615672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3beae738d8d944b83a066e7235c6e78d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementList: []
+  chosenElements: []

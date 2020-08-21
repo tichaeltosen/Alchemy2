@@ -10,7 +10,6 @@ public class ShowHide : ElementData
 
     private void Start()
     {
-        PotionEventManager.PotionCreate += ShowContents;
     }
 
     private void OnDisable()
@@ -18,7 +17,7 @@ public class ShowHide : ElementData
         if (gameObject.CompareTag("Element"))
         {
             PotionEventManager.PotionCreate += ShowObject;
-            chosenElements.Add(gameObject.name);
+    
         }
     }
 
@@ -29,11 +28,7 @@ public class ShowHide : ElementData
         if(gameObject.CompareTag("Element") && wasActive)
         {
             PotionEventManager.PotionCreate -= ShowObject;
-            if(chosenElements.Count > 0)
-            {
-                chosenElements.Remove(gameObject.name);
-               // ShowContents();
-            }
+          
         
         }
         else if (gameObject.CompareTag("Element") && !wasActive)
@@ -56,20 +51,5 @@ public class ShowHide : ElementData
         }
     }
 
-    public void ShowContents()
-    {
-        if(chosenElements.Count > 0)
-        {
-            foreach (string s in chosenElements)
-            {
-                Debug.Log("Chosen Element:  " + s);
-            }
-
-        }else
-        {
-            Debug.Log("No Elements");
-        }
-        
-    }
 
 }
