@@ -24,17 +24,17 @@ public class PotionEventManager : MonoBehaviour
     {
         // make the potion...
         RaycastManager.instance.itemNameText.text = "Creating Potion...";
-        Debug.Log("creating potion");
+       // Debug.Log("creating potion");
         GameManager.instance.count = 0;
         yield return new WaitForSeconds(2);
         RaycastManager.instance.itemNameText.text = "Potion Created!";
-        Debug.Log("potion created");
+       // Debug.Log("potion created");
         yield return new WaitForSeconds(2);
         if (PotionCreate != null)
         {
             PotionCreate();
         }
-        Debug.Log("process over");
+      //  Debug.Log("process over");
         RaycastManager.instance.creatingPotion = false;
 
     }

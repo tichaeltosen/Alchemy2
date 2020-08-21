@@ -26,7 +26,7 @@ public class ItemProperties : MonoBehaviour
 
     public void Start()
     {
-     
+     //
     
     }
 
@@ -61,7 +61,7 @@ public class ItemProperties : MonoBehaviour
         GameObject newElement = Instantiate(chosenElement, element.transform.position, element.transform.rotation);
         newElement.name = itemName + "Copy";
         GameManager.instance.count++;
-        Debug.Log(GameManager.instance.count);
+    //    Debug.Log(GameManager.instance.count);
 
     }
 

@@ -5,7 +5,6 @@ using UnityEngine;
 public class ElementData : MonoBehaviour
 {
     public List<string> elementList;
-    public List<string> chosenElements = new List<string>();
     public static ElementData instance;
 
     GameObject[] elements;

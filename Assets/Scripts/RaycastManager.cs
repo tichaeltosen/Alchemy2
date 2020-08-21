@@ -8,6 +8,8 @@ public class RaycastManager : MonoBehaviour
     public static RaycastManager instance;
     public Text itemNameText;
     public bool creatingPotion;
+    public List<string> chosenElements = new List<string>();
+
 
     private GameObject raycastedObj;
 
@@ -43,6 +45,8 @@ public class RaycastManager : MonoBehaviour
                 {
                     // do something
                     raycastedObj.GetComponent<ItemProperties>().Interaction();
+                    // add to list of chosen elements
+                    chosenElements.Add(raycastedObj.name);
 
                 }
             }

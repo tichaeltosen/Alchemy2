@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 476412}
   - component: {fileID: 3385380}
   - component: {fileID: 2390562}
-  m_Layer: 0
+  - component: {fileID: 7088717373790455931}
+  - component: {fileID: 8032926749165868279}
+  - component: {fileID: 508880198338655637}
+  m_Layer: 8
   m_Name: Tin
-  m_TagString: Untagged
+  m_TagString: Element
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160260}
-  m_LocalRotation: {x: 0.0000000218557, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -79,3 +82,50 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7088717373790455931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160260}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0031173, y: 0.6573561, z: 2.0847611}
+  m_Center: {x: -0.04876885, y: 0.1892738, z: 0.02134484}
+--- !u!114 &8032926749165868279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c1c95414758a4ecd9996102fa29a48a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Tin
+  chosenElement: {fileID: 20681059691421273, guid: 55b2991b4edd7415e8e92717aeb803a1,
+    type: 3}
+  potionTable1: {fileID: 0}
+  potionTable2: {fileID: 0}
+  element: 1
+  potion: 0
+  book: 0
+--- !u!114 &508880198338655637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3beae738d8d944b83a066e7235c6e78d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementList: []
+  chosenElements: []
