@@ -5,7 +5,7 @@ using UnityEngine;
 public class PotionEventManager : MonoBehaviour
 {
     public delegate void ClickAction();
-    public static event ClickAction PotionCreate;
+    public static event ClickAction PotionCreate, PotionInstantiate;
 
     public void CreatingPotion()
     {
@@ -36,7 +36,11 @@ public class PotionEventManager : MonoBehaviour
         }
         //  Debug.Log("process over");
         yield return new WaitForSeconds(3);
-        for(int i = 0; i < RaycastManager.instance.chosenElements.Count; i++)
+        if (PotionInstantiate != null)
+        {
+            PotionInstantiate();
+        }
+        for (int i = 0; i < RaycastManager.instance.chosenElements.Count; i++)
         {
             RaycastManager.instance.chosenElements.RemoveAt(i);
         }
