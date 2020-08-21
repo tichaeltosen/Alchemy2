@@ -32,8 +32,11 @@ public class CraftRecipe : ElementData
             {
                 string potion = recipes[i].name;
                 Debug.Log("Potion Created is:  " + potion);
+                RaycastManager.instance.itemNameText.text = "Potion Created is:  " + potion;
 
-            }else
+
+            }
+            else
             {
               //  Debug.Log("No Potion");
 
