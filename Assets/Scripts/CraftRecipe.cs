@@ -2,28 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CraftRecipe : ElementData
+public class CraftRecipe : MonoBehaviour
 {
     public static List<Recipes> recipes = new List<Recipes>();
     public string potion;
+    public static CraftRecipe instance;
 
 
     public void Awake()
     {
-
+        instance = this;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        PotionEventManager.PotionCreate += CraftedPotion;
-        recipes.Add(new Recipes("Sun", new List<string>() { "Gold", "Silver" }));
-        recipes.Add(new Recipes("Moon", new List<string>() { "Copper", "Silver" }));
-        recipes.Add(new Recipes("Gravity", new List<string>() { "Gold", "Copper" }));
+        recipes.Add(new Recipes("Sun", new List<string>() { "Gold", "Mercury" }));
+        recipes.Add(new Recipes("Moon", new List<string>() { "Silver", "Mercury" }));
+        recipes.Add(new Recipes("Feather", new List<string>() { "Salt", "Silver" }));
+        recipes.Add(new Recipes("Strength", new List<string>() { "Iron", "Salt" }));
+        recipes.Add(new Recipes("Fertility", new List<string>() { "Copper", "Iron" }));
+        recipes.Add(new Recipes("Shrinking", new List<string>() { "Copper", "Tin" }));
+        recipes.Add(new Recipes("Electric", new List<string>() { "Silver", "Lead" }));
+        recipes.Add(new Recipes("Heavy", new List<string>() { "Mercury", "Lead" }));
+        recipes.Add(new Recipes("Sound", new List<string>() { "Mercury", "Lead" }));
+
 
     }
 
-    public void CraftedPotion()
+    public string CraftedPotion()
     {
         RaycastManager.instance.chosenElements.Sort();
 
@@ -39,13 +46,12 @@ public class CraftRecipe : ElementData
                 potion = recipes[i].name;
                 Debug.Log("Potion Created is:  " + potion);
                 RaycastManager.instance.itemNameText.text = "Potion Created is:  " + potion;
-            }
-            else
-            {
-              //  Debug.Log("No Potion");
+                return potion;
 
             }
+
         }
+        return "None";
 
     }
 

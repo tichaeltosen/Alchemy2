@@ -30,6 +30,34 @@ public class RaycastManager : MonoBehaviour
 
     void Update()
     {
+        if (!PotionEventManager.instance.potionEquipped)
+        {
+            PotionDisabled();
+        }else if (PotionEventManager.instance.potionEquipped)
+        {
+
+        }
+    }
+
+    void CrosshairActive()
+    {
+        crossHair.enabled = true;
+        crossHair.color = Color.red;
+    }
+
+    void CrosshairNormal()
+    {
+        crossHair.enabled = true;
+        crossHair.color = Color.white;
+    }
+
+    void CrossHairDisabled()
+    {
+        crossHair.enabled = false;
+    }
+
+    void PotionDisabled()
+    {
         RaycastHit hit;
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
@@ -57,20 +85,22 @@ public class RaycastManager : MonoBehaviour
 
                 if (GameManager.instance.count < 2 && !creatingPotion)
                 {
-                   itemNameText.text = "Choose Elements To Create Potion";
+                    itemNameText.text = "Choose Elements To Create Potion";
 
-                }else if (GameManager.instance.count == 2 && !creatingPotion)
+                }
+                else if (GameManager.instance.count == 2 && !creatingPotion)
                 {
-                   itemNameText.text = "Click To Create Potion";
+                    itemNameText.text = "Click To Create Potion";
 
                 }
                 if (Input.GetMouseButtonDown(0))
                 {
                     raycastedObj.GetComponent<PotionEventManager>().CreatingPotion();
                 }
-                
+
             }
-        }else
+        }
+        else
         {
             CrosshairNormal();
             if (!creatingPotion)
@@ -78,16 +108,28 @@ public class RaycastManager : MonoBehaviour
                 itemNameText.text = "";
             }
         }
+
     }
 
-    void CrosshairActive()
+    void PotionEnabled()
     {
-        crossHair.color = Color.red;
-    }
+        RaycastHit hit;
+        Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
-    void CrosshairNormal()
-    {
-        crossHair.color = Color.white;
-    }
+        if (Physics.Raycast(transform.position, fwd, out hit, rayLength, newLayerMask.value))
+        {
+            if (hit.collider.CompareTag("Potion-Interactable"))
+            {
+                CrossHairDisabled();
+                raycastedObj = hit.collider.gameObject;
+                itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
+                //update UI Name, etc. below
+                if (Input.GetMouseButtonDown(0))
+                {
+                    // do something
+                    raycastedObj.GetComponent<ItemProperties>().Interaction();
+
+                }
+            }
 
 }

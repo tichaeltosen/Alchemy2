@@ -5,9 +5,10 @@ using UnityEngine;
 public class InstantiatePotion : MonoBehaviour
 {
     private string potion;
-    public GameObject sun, moon, gravity;
+    public GameObject getPotion;
+    public GameObject sun, moon, feather, strength, fertility, shrinking, electric, heavy, sound;
     public Transform player;
-    public float distance = 0.5f;
+    public float distance = 1f;
     private void Start()
     {
         PotionEventManager.PotionInstantiate += PotionToGame;
@@ -17,30 +18,59 @@ public class InstantiatePotion : MonoBehaviour
 
     public void PotionToGame()
     {
-        potion = gameObject.GetComponent<CraftRecipe>().potion;
+        potion = getPotion.GetComponent<PotionEventManager>().potionReturn;
         Debug.Log("Testing Potion Instantiating Script:  " + potion);
 
         switch(potion)
         {
             case "Moon":
-
-                GameObject childMoon = Instantiate(moon, player.transform.position + transform.forward * distance, player.transform.rotation);
-                childMoon.transform.SetParent(player);
-
-
+                CreateInstance(moon);
 
                 break;
 
             case "Sun":
-                GameObject childSun = Instantiate(moon, player.transform.position + transform.forward * distance, player.transform.rotation);
-                childSun.transform.SetParent(player);
+                CreateInstance(moon);
+
+                break;
+
+            case "Feather":
+                CreateInstance(moon);
+
+                break;
+
+            case "Strength":
+                CreateInstance(moon);
+
+                break;
+
+            case "Fertility":
+                CreateInstance(moon);
+
+                break;
+
+            case "Shrinking":
+                CreateInstance(moon);
+
+                break;
+
+            case "Electric":
+                CreateInstance(moon);
+
+                break;
+
+            case "Heavy":
+                CreateInstance(moon);
 
 
                 break;
 
-            case "Gravity":
-                GameObject childGravity = Instantiate(moon, player.transform.position + transform.forward * distance, player.transform.rotation);
-                childGravity.transform.SetParent(player);
+            case "Sound":
+                CreateInstance(moon);
+
+                break;
+
+            case "None":
+                //do something for default no potion 
 
 
                 break;
@@ -49,6 +79,13 @@ public class InstantiatePotion : MonoBehaviour
         }
 
 
+    }
+
+    private void CreateInstance(GameObject name)
+    {
+        Vector3 shiftLeft = new Vector3(-.15f, -.15f, 0f);
+        name = Instantiate(name, player.transform.position + shiftLeft + transform.forward * distance, player.transform.rotation);
+        name.transform.SetParent(player);
     }
 
 

@@ -6,6 +6,15 @@ public class PotionEventManager : MonoBehaviour
 {
     public delegate void ClickAction();
     public static event ClickAction PotionCreate, PotionInstantiate;
+    public string potionReturn;
+    public bool potionEquipped;
+
+    public static PotionEventManager instance;
+
+    public void Awake()
+    {
+        instance = this;
+    }
 
     public void CreatingPotion()
     {
@@ -23,23 +32,38 @@ public class PotionEventManager : MonoBehaviour
     private IEnumerator WaitForPotion()
     {
         // make the potion...
-        RaycastManager.instance.itemNameText.text = "Creating Potion...";
+       // RaycastManager.instance.itemNameText.text = "Creating Potion...";
        // Debug.Log("creating potion");
         GameManager.instance.count = 0;
-        yield return new WaitForSeconds(1);
-        RaycastManager.instance.itemNameText.text = "Potion Created!";
+      //  yield return new WaitForSeconds(1);
+       // RaycastManager.instance.itemNameText.text = "Potion Created!";
        // Debug.Log("potion created");
-        yield return new WaitForSeconds(1);
+       // yield return new WaitForSeconds(1);
         if (PotionCreate != null)
         {
             PotionCreate();
+
         }
+
+        potionReturn = CraftRecipe.instance.CraftedPotion();
+
+        
+
         //  Debug.Log("process over");
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         if (PotionInstantiate != null)
         {
             PotionInstantiate();
         }
+
+        //check if potion returns something
+        if (potionReturn != "None")
+        {
+            potionEquipped = true;
+        }
+
+        yield return new WaitForSeconds(2);
+
         for (int i = 0; i < RaycastManager.instance.chosenElements.Count; i++)
         {
             RaycastManager.instance.chosenElements.RemoveAt(i);
