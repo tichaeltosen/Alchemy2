@@ -75,8 +75,8 @@ public class InstantiatePotion : MonoBehaviour
 
     public void InstPotion(GameObject name)
     {
-        Instantiate(name, player.position + player.transform.forward * distance, player.rotation, player);
-        name.gameObject.AddComponent<UsePotion>();
+        GameObject newObj = Instantiate(name, player.position + player.transform.forward * distance, player.rotation, player);
+        newObj.gameObject.AddComponent<UsePotion>();
     }
 
 

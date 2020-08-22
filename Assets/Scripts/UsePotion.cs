@@ -24,6 +24,6 @@ public class UsePotion : MonoBehaviour
 
     private void OnDestroy()
     {
-        Destroy(this);
+        Debug.Log("Destroyed");
     }
 }
