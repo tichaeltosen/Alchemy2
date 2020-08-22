@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2765806261755196459}
   m_Layer: 0
-  m_Name: MoonVision
-  m_TagString: Untagged
+  m_Name: Moon
+  m_TagString: Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
