@@ -7,8 +7,7 @@ public class PotionEventManager : MonoBehaviour
     public delegate void ClickAction();
     public static event ClickAction PotionCreate, PotionInstantiate;
     public string potionReturn;
-    public bool potionEquipped;
-
+    public bool potionEquipped; 
     public static PotionEventManager instance;
 
     public void Awake()

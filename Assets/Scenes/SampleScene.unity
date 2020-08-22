@@ -839,15 +839,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getPotion: {fileID: 835235718}
-  sun: {fileID: 4489196972736291449, guid: eba59a8323af345208e770014849929e, type: 3}
-  moon: {fileID: 4489196972736291449, guid: eba59a8323af345208e770014849929e, type: 3}
-  feather: {fileID: 0}
-  strength: {fileID: 0}
-  fertility: {fileID: 0}
-  shrinking: {fileID: 0}
-  electric: {fileID: 0}
-  heavy: {fileID: 0}
-  sound: {fileID: 0}
+  sun: {fileID: 7516147023265018176, guid: e2a134978549147b68c2b358847c1124, type: 3}
+  moon: {fileID: 5429487793784795269, guid: 01996350d454a483cacf42827c8c77f8, type: 3}
+  feather: {fileID: 7516147023265018176, guid: 724e53de038f04f558539ebea15248a0, type: 3}
+  strength: {fileID: 8385242052075035819, guid: 56afe7764f14c4a98a67d60700753a95,
+    type: 3}
+  fertility: {fileID: 8385242052075035819, guid: 0aa899a85e01b4544bae359c2c01f663,
+    type: 3}
+  shrinking: {fileID: 7200927917085466066, guid: 5a4497e2ff63e4f57acfa3658aba971c,
+    type: 3}
+  electric: {fileID: 7200927917085466066, guid: c786bc1e77a404be3823726f84d927ea,
+    type: 3}
+  heavy: {fileID: 8385242052075035819, guid: 9bbb3dd98021c475588fc2e661d74570, type: 3}
+  sound: {fileID: 7200927917085466066, guid: e4941ed0c38824a50af9923dc7a9012c, type: 3}
   player: {fileID: 1233642242}
   distance: 2
 --- !u!1 &1909886956
