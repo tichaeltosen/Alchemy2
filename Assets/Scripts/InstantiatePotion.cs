@@ -31,60 +31,52 @@ public class InstantiatePotion : MonoBehaviour
         switch(potion)
         {
             case "Moon":
-                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
+                InstPotion(moon);
                 break;
 
             case "Sun":
-                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
-
+                InstPotion(sun);
                 break;
 
             case "Feather":
-                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
-
+                InstPotion(feather);
                 break;
 
             case "Strength":
-                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
-
+                InstPotion(strength);
                 break;
 
             case "Fertility":
-                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
-
+                InstPotion(fertility);
                 break;
 
             case "Shrinking":
-                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
-
+                InstPotion(shrinking);
                 break;
 
             case "Electric":
-                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
-
+                InstPotion(electric);
                 break;
 
             case "Heavy":
-                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
-
-
+                InstPotion(heavy);
                 break;
 
             case "Sound":
-                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
-
+                InstPotion(sound);
                 break;
 
             case "None":
                 //do something for default no potion 
-
-
                 break;
-
-
         }
 
+    }
 
+    public void InstPotion(GameObject name)
+    {
+        Instantiate(name, player.position + player.transform.forward * distance, player.rotation, player);
+        name.gameObject.AddComponent<UsePotion>();
     }
 
 

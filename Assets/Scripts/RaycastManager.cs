@@ -109,14 +109,17 @@ public class RaycastManager : MonoBehaviour
             {
 
                 potionObject = GameObject.FindWithTag("Potion");
+                Renderer[] renderers = potionObject.GetComponentsInChildren<Renderer>();
+                foreach(Renderer r in renderers)
+                {
+                    Color color = r.material.color;
+                    color.a = 0.8f;
+                    r.material.color = color;    
+                }
+
                 raycastedObj = hit.collider.gameObject;
 
                 itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
-
-                //change alpha of potion color to opaque
-                Color color = potionObject.GetComponent<Renderer>().material.color;
-                color.a = 0.7f;
-                potionObject.GetComponent<Renderer>().material.color = color;
 
                 if (Input.GetMouseButtonDown(0))
                 {
@@ -129,10 +132,14 @@ public class RaycastManager : MonoBehaviour
         else
         {
             itemNameText.text = "";
-            Color color = potionObject.GetComponent<Renderer>().material.color;
-            color.a = 0.4f;
-            potionObject.GetComponent<Renderer>().material.color = color;
-
+            potionObject = GameObject.FindWithTag("Potion");
+            Renderer[] renderers = potionObject.GetComponentsInChildren<Renderer>();
+            foreach (Renderer r in renderers)
+            {
+                Color color = r.material.color;
+                color.a = 0.5f;
+                r.material.color = color;
+            }
         }
     }
 
