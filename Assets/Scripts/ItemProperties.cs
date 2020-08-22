@@ -50,6 +50,7 @@ public class ItemProperties : MonoBehaviour
         else if (potion_interactable)
         {
             //
+
         }
 
 

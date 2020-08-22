@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class InstantiatePotion : MonoBehaviour
 {
-    private string potion;
     public GameObject getPotion;
     public GameObject sun, moon, feather, strength, fertility, shrinking, electric, heavy, sound;
     public Transform player;
-    public float distance = 1f;
+    public float distance = 2f;
+
+    private string potion;
+
+
+
+    private Transform Appear;
+
     private void Start()
     {
         PotionEventManager.PotionInstantiate += PotionToGame;
+
     }
 
 
@@ -24,48 +31,47 @@ public class InstantiatePotion : MonoBehaviour
         switch(potion)
         {
             case "Moon":
-                CreateInstance(moon);
-
+                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
                 break;
 
             case "Sun":
-                CreateInstance(moon);
+                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
 
                 break;
 
             case "Feather":
-                CreateInstance(moon);
+                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
 
                 break;
 
             case "Strength":
-                CreateInstance(moon);
+                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
 
                 break;
 
             case "Fertility":
-                CreateInstance(moon);
+                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
 
                 break;
 
             case "Shrinking":
-                CreateInstance(moon);
+                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
 
                 break;
 
             case "Electric":
-                CreateInstance(moon);
+                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
 
                 break;
 
             case "Heavy":
-                CreateInstance(moon);
+                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
 
 
                 break;
 
             case "Sound":
-                CreateInstance(moon);
+                Instantiate(moon, player.position + player.transform.forward * distance, player.rotation, player);
 
                 break;
 
@@ -79,13 +85,6 @@ public class InstantiatePotion : MonoBehaviour
         }
 
 
-    }
-
-    private void CreateInstance(GameObject name)
-    {
-        Vector3 shiftLeft = new Vector3(-.15f, -.15f, 0f);
-        name = Instantiate(name, player.transform.position + shiftLeft + transform.forward * distance, player.transform.rotation);
-        name.transform.SetParent(player);
     }
 
 

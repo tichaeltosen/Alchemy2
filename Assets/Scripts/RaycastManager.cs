@@ -12,6 +12,7 @@ public class RaycastManager : MonoBehaviour
 
 
     private GameObject raycastedObj;
+    private GameObject potionObject;
 
     [Header("Raycast Settings")]
     [SerializeField]
@@ -32,28 +33,13 @@ public class RaycastManager : MonoBehaviour
     {
         if (!PotionEventManager.instance.potionEquipped)
         {
+            CrosshairNormal();
             PotionDisabled();
         }else if (PotionEventManager.instance.potionEquipped)
         {
-
+            CrossHairDisabled();
+            PotionEnabled();
         }
-    }
-
-    void CrosshairActive()
-    {
-        crossHair.enabled = true;
-        crossHair.color = Color.red;
-    }
-
-    void CrosshairNormal()
-    {
-        crossHair.enabled = true;
-        crossHair.color = Color.white;
-    }
-
-    void CrossHairDisabled()
-    {
-        crossHair.enabled = false;
     }
 
     void PotionDisabled()
@@ -115,21 +101,57 @@ public class RaycastManager : MonoBehaviour
     {
         RaycastHit hit;
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
+        itemNameText.text = "";
 
         if (Physics.Raycast(transform.position, fwd, out hit, rayLength, newLayerMask.value))
         {
             if (hit.collider.CompareTag("Potion-Interactable"))
             {
-                CrossHairDisabled();
+
+                potionObject = GameObject.FindWithTag("Potion");
                 raycastedObj = hit.collider.gameObject;
+
                 itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
-                //update UI Name, etc. below
+
+                //change alpha of potion color to opaque
+                Color color = potionObject.GetComponent<Renderer>().material.color;
+                color.a = 0.7f;
+                potionObject.GetComponent<Renderer>().material.color = color;
+
                 if (Input.GetMouseButtonDown(0))
                 {
                     // do something
                     raycastedObj.GetComponent<ItemProperties>().Interaction();
-
                 }
             }
+            
+        }
+        else
+        {
+            itemNameText.text = "";
+            Color color = potionObject.GetComponent<Renderer>().material.color;
+            color.a = 0.4f;
+            potionObject.GetComponent<Renderer>().material.color = color;
+
+        }
+    }
+
+    void CrosshairActive()
+    {
+        crossHair.enabled = true;
+        crossHair.color = Color.red;
+    }
+
+    void CrosshairNormal()
+    {
+        crossHair.enabled = true;
+        crossHair.color = Color.white;
+    }
+
+    void CrossHairDisabled()
+    {
+        crossHair.enabled = false;
+    }
+
 
 }
