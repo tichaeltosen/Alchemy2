@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - MakePotion
   - Variant
+  - Potion-Interactable
+  - Potion
   layers:
   - Default
   - TransparentFX

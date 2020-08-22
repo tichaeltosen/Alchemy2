@@ -12,6 +12,7 @@ public class RaycastManager : MonoBehaviour
 
 
     private GameObject raycastedObj;
+    private GameObject potionObject;
 
     [Header("Raycast Settings")]
     [SerializeField]
@@ -29,6 +30,19 @@ public class RaycastManager : MonoBehaviour
     }
 
     void Update()
+    {
+        if (!PotionEventManager.instance.potionEquipped)
+        {
+            CrosshairNormal();
+            PotionDisabled();
+        }else if (PotionEventManager.instance.potionEquipped)
+        {
+            CrossHairDisabled();
+            PotionEnabled();
+        }
+    }
+
+    void PotionDisabled()
     {
         RaycastHit hit;
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
@@ -57,20 +71,22 @@ public class RaycastManager : MonoBehaviour
 
                 if (GameManager.instance.count < 2 && !creatingPotion)
                 {
-                   itemNameText.text = "Choose Elements To Create Potion";
+                    itemNameText.text = "Choose Elements To Create Potion";
 
-                }else if (GameManager.instance.count == 2 && !creatingPotion)
+                }
+                else if (GameManager.instance.count == 2 && !creatingPotion)
                 {
-                   itemNameText.text = "Click To Create Potion";
+                    itemNameText.text = "Click To Create Potion";
 
                 }
                 if (Input.GetMouseButtonDown(0))
                 {
                     raycastedObj.GetComponent<PotionEventManager>().CreatingPotion();
                 }
-                
+
             }
-        }else
+        }
+        else
         {
             CrosshairNormal();
             if (!creatingPotion)
@@ -78,16 +94,64 @@ public class RaycastManager : MonoBehaviour
                 itemNameText.text = "";
             }
         }
+
+    }
+
+    void PotionEnabled()
+    {
+        RaycastHit hit;
+        Vector3 fwd = transform.TransformDirection(Vector3.forward);
+        itemNameText.text = "";
+
+        if (Physics.Raycast(transform.position, fwd, out hit, rayLength, newLayerMask.value))
+        {
+            if (hit.collider.CompareTag("Potion-Interactable"))
+            {
+
+                potionObject = GameObject.FindWithTag("Potion");
+                raycastedObj = hit.collider.gameObject;
+
+                itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
+
+                //change alpha of potion color to opaque
+                Color color = potionObject.GetComponent<Renderer>().material.color;
+                color.a = 0.7f;
+                potionObject.GetComponent<Renderer>().material.color = color;
+
+                if (Input.GetMouseButtonDown(0))
+                {
+                    // do something
+                    raycastedObj.GetComponent<ItemProperties>().Interaction();
+                }
+            }
+            
+        }
+        else
+        {
+            itemNameText.text = "";
+            Color color = potionObject.GetComponent<Renderer>().material.color;
+            color.a = 0.4f;
+            potionObject.GetComponent<Renderer>().material.color = color;
+
+        }
     }
 
     void CrosshairActive()
     {
+        crossHair.enabled = true;
         crossHair.color = Color.red;
     }
 
     void CrosshairNormal()
     {
+        crossHair.enabled = true;
         crossHair.color = Color.white;
     }
+
+    void CrossHairDisabled()
+    {
+        crossHair.enabled = false;
+    }
+
 
 }
