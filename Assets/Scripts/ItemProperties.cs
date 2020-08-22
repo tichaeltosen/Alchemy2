@@ -17,7 +17,7 @@ public class ItemProperties : MonoBehaviour
     [SerializeField]
     private bool element;
     [SerializeField]
-    private bool potion;
+    private bool potion_interactable;
     [SerializeField]
     private bool book;
 
@@ -47,9 +47,10 @@ public class ItemProperties : MonoBehaviour
             }
         }
        
-        else if (potion)
+        else if (potion_interactable)
         {
             //
+
         }
 
 
