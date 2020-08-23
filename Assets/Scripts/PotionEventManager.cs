@@ -50,11 +50,14 @@ public class PotionEventManager : MonoBehaviour
             potionEquipped = true;
         }
         yield return new WaitForSeconds(2);
+        Debug.Log("Count Before Deleted : " + RaycastManager.instance.chosenElements.Count);
 
-        for (int i = 0; i < RaycastManager.instance.chosenElements.Count; i++)
-        {
-            RaycastManager.instance.chosenElements.RemoveAt(i);
-        }
+        RaycastManager.instance.chosenElements.RemoveAt(1);
+        RaycastManager.instance.chosenElements.RemoveAt(0);
+
+        Debug.Log("Count After Deleted  : " + RaycastManager.instance.chosenElements.Count);
+
+
         RaycastManager.instance.creatingPotion = false;
 
     }

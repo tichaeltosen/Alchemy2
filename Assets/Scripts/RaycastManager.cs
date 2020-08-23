@@ -77,6 +77,7 @@ public class RaycastManager : MonoBehaviour
                     if (rStatus)
                     {
                         chosenElements.Add(raycastedObj.name);
+                        Debug.Log("Chosen Element is : " + raycastedObj.name);
 
                     }
 

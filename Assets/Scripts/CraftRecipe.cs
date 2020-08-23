@@ -37,7 +37,7 @@ public class CraftRecipe : MonoBehaviour
         for (int i = 0; i < recipes.Count; i++)
         {
             recipes[i].ingredientNames.Sort();
-            Debug.Log("sorted recipes" + recipes[i].ingredientNames[0] + " and" + recipes[i].ingredientNames[1]);
+            //Debug.Log("sorted recipes" + recipes[i].ingredientNames[0] + " and" + recipes[i].ingredientNames[1]);
             Debug.Log("sorted elements" + RaycastManager.instance.chosenElements[0] + " and" + RaycastManager.instance.chosenElements[1]);
 
 
