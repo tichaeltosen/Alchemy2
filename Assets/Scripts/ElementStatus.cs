@@ -12,7 +12,6 @@ public class ElementStatus : Element, IElement
     {
         title = gameObject.name;
         isRacked = rackStatus;
-        Debug.Log("name: " + title + "racked status" + isRacked);
     }
 
     public bool IsRacked()

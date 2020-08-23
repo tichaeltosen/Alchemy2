@@ -6,10 +6,11 @@ public class ShowHide : ElementData
 {
     GameObject[] variants;
     //list of elements on potion table
-    bool wasActive;
 
     private void Start()
     {
+         PotionEventManager.PotionCreate += ShowObject;
+
     }
 
     private void OnDisable()
@@ -25,20 +26,12 @@ public class ShowHide : ElementData
 
     private void OnEnable()
     {
-        wasActive = FindElement(gameObject.name);
 
-        if(gameObject.CompareTag("Element") && wasActive)
+        if (gameObject.CompareTag("Element"))
         {
             PotionEventManager.PotionCreate -= ShowObject;
-          
-        
         }
-        else if (gameObject.CompareTag("Element") && !wasActive)
-        {
-            elementList.Add(gameObject.name);
-            // check to make sure active element list grows 
-            Debug.Log("Active Elements:" + elementList.Count);
-        }
+
     }
 
 
