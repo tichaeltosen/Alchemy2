@@ -10,6 +10,7 @@ TagManager:
   - Variant
   - Potion-Interactable
   - Potion
+  - MoonEffect
   layers:
   - Default
   - TransparentFX
