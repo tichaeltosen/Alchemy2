@@ -6,6 +6,7 @@ public class ElementData : MonoBehaviour
 {
     public List<string> elementList;
     public static ElementData instance;
+    bool rStatus;
 
     GameObject[] elements;
 
@@ -25,8 +26,6 @@ public class ElementData : MonoBehaviour
             if (e.activeSelf)
             {
                 elementList.Add(e.name);
-               // Debug.Log("Active Elements:" + e.name + "Count:" + elementList.Count);
-
             }
         }
 
@@ -35,6 +34,7 @@ public class ElementData : MonoBehaviour
 
     public bool FindElement(string name)
     {
+        
         foreach (string e in elementList)
         {
             if (e == name)

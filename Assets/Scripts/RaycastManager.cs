@@ -23,10 +23,16 @@ public class RaycastManager : MonoBehaviour
     [Header("References")]
     [SerializeField]
     private Image crossHair;
+    private bool rStatus;
 
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+
     }
 
     void Update()
@@ -45,7 +51,7 @@ public class RaycastManager : MonoBehaviour
     void PotionDisabled()
     {
         RaycastHit hit;
-        Vector3 fwd = transform.TransformDirection(Vector3.forward);
+        Vector3 fwd = transform.TransformDirection(Vector3.forward);        
 
         if (Physics.Raycast(transform.position, fwd, out hit, rayLength, newLayerMask.value))
         {
@@ -53,14 +59,27 @@ public class RaycastManager : MonoBehaviour
             {
                 CrosshairActive();
                 raycastedObj = hit.collider.gameObject;
+                IElement RackStatus = raycastedObj.GetComponent<IElement>();
                 itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
-                //update UI Name, etc. below
                 if (Input.GetMouseButtonDown(0))
                 {
                     // do something
+
+                    if (raycastedObj.GetComponent<IElement>() != null)
+                    {
+                        rStatus = RackStatus.IsRacked();
+
+                    }
+
                     raycastedObj.GetComponent<ItemProperties>().Interaction();
                     // add to list of chosen elements
-                    chosenElements.Add(raycastedObj.name);
+
+                    if (rStatus)
+                    {
+                        chosenElements.Add(raycastedObj.name);
+                        Debug.Log("Chosen Element is : " + raycastedObj.name);
+
+                    }
 
                 }
             }

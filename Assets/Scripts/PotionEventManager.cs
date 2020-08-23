@@ -24,20 +24,13 @@ public class PotionEventManager : MonoBehaviour
             StartCoroutine(WaitForPotion());
 
         }
-
-      
     }
 
     private IEnumerator WaitForPotion()
     {
         // make the potion...
-       // RaycastManager.instance.itemNameText.text = "Creating Potion...";
-       // Debug.Log("creating potion");
         GameManager.instance.count = 0;
-      //  yield return new WaitForSeconds(1);
-       // RaycastManager.instance.itemNameText.text = "Potion Created!";
-       // Debug.Log("potion created");
-       // yield return new WaitForSeconds(1);
+      
         if (PotionCreate != null)
         {
             PotionCreate();
@@ -45,28 +38,26 @@ public class PotionEventManager : MonoBehaviour
         }
 
         potionReturn = CraftRecipe.instance.CraftedPotion();
-
-        
-
-        //  Debug.Log("process over");
+     
         yield return new WaitForSeconds(1);
         if (PotionInstantiate != null)
         {
             PotionInstantiate();
         }
-
         //check if potion returns something
         if (potionReturn != "None")
         {
             potionEquipped = true;
         }
-
         yield return new WaitForSeconds(2);
+        Debug.Log("Count Before Deleted : " + RaycastManager.instance.chosenElements.Count);
 
-        for (int i = 0; i < RaycastManager.instance.chosenElements.Count; i++)
-        {
-            RaycastManager.instance.chosenElements.RemoveAt(i);
-        }
+        RaycastManager.instance.chosenElements.RemoveAt(1);
+        RaycastManager.instance.chosenElements.RemoveAt(0);
+
+        Debug.Log("Count After Deleted  : " + RaycastManager.instance.chosenElements.Count);
+
+
         RaycastManager.instance.creatingPotion = false;
 
     }

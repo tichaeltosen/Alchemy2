@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Element 
+public abstract class Element : MonoBehaviour
 {
     public string title
     {
@@ -10,15 +10,11 @@ public class Element
     }
 
 
-    public bool isActive
+    public bool isRacked
     {
         get; set;
     }
 
-    public Element(string title)
-    {
-        this.title = title;
-    }
 
     
 }

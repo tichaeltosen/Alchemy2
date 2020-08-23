@@ -20,21 +20,22 @@ public class ItemProperties : MonoBehaviour
     private bool potion_interactable;
     [SerializeField]
     private bool book;
+    private bool rStatus;
 
-
-    Vector3 scaleChange; // change scale of object clicked on maybe
-
-    public void Start()
-    {
-     //
-    
-    }
 
 
     public void Interaction()
     {
 
-        if (element)
+        IElement RackStatus = gameObject.GetComponent<IElement>();
+        if (gameObject.GetComponent<IElement>() != null)
+        {
+           rStatus = RackStatus.IsRacked();
+
+        }
+
+        // if it's an element on the spice rack
+        if (element && rStatus)
         {
             if (GameManager.instance.count == 0)
             {
@@ -46,7 +47,14 @@ public class ItemProperties : MonoBehaviour
 
             }
         }
-       
+        // if it's an element but not on the rack yet
+        else if(element && !rStatus && gameObject.GetComponent<IElement>() != null)
+        {
+            RackStatus.ChangeRackedStatus();
+            RackStatus.MoveElement();
+
+        }
+
         else if (potion_interactable)
         {
             //
@@ -62,7 +70,6 @@ public class ItemProperties : MonoBehaviour
         GameObject newElement = Instantiate(chosenElement, element.transform.position, element.transform.rotation);
         newElement.name = itemName + "Copy";
         GameManager.instance.count++;
-    //    Debug.Log(GameManager.instance.count);
 
     }
 
