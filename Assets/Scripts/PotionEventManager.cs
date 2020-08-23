@@ -49,14 +49,13 @@ public class PotionEventManager : MonoBehaviour
         {
             potionEquipped = true;
         }
-        yield return new WaitForSeconds(2);
-        Debug.Log("Count Before Deleted : " + RaycastManager.instance.chosenElements.Count);
+        yield return new WaitForSeconds(1);
 
         RaycastManager.instance.chosenElements.RemoveAt(1);
         RaycastManager.instance.chosenElements.RemoveAt(0);
 
-        Debug.Log("Count After Deleted  : " + RaycastManager.instance.chosenElements.Count);
 
+        yield return new WaitForSeconds(2);
 
         RaycastManager.instance.creatingPotion = false;
 

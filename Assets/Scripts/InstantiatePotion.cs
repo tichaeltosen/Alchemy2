@@ -10,9 +10,6 @@ public class InstantiatePotion : MonoBehaviour
     public float distance = 2f;
 
     private string potion;
-
-
-
     private Transform Appear;
 
     private void Start()

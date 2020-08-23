@@ -7,6 +7,7 @@ public class UsePotion : MonoBehaviour
     public delegate void PotionEffect();
     public static event PotionEffect Effect;
 
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
