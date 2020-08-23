@@ -54,7 +54,6 @@ public class RaycastManager : MonoBehaviour
                 CrosshairActive();
                 raycastedObj = hit.collider.gameObject;
                 itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
-                //update UI Name, etc. below
                 if (Input.GetMouseButtonDown(0))
                 {
                     // do something

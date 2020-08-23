@@ -21,6 +21,8 @@ public class ShowHide : ElementData
         }
     }
 
+    // do this based on if the element was racked or not
+
     private void OnEnable()
     {
         wasActive = FindElement(gameObject.name);
