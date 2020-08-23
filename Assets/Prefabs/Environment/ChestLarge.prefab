@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 7281348546232778620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 5972286431836270474}
   - {fileID: 2691832596856956951}
@@ -102,7 +102,7 @@ PrefabInstance:
     - target: {fileID: 4636390467300734140, guid: 2df497991c3232a4189551caaab8b8a7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2df497991c3232a4189551caaab8b8a7, type: 3}
@@ -178,6 +178,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chest_Closed
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029975315589392941, guid: 820ba2299eed1da49a51bd7088c76f3a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820ba2299eed1da49a51bd7088c76f3a, type: 3}
