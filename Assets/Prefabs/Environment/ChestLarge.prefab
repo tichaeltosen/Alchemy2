@@ -99,11 +99,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest_Open
       objectReference: {fileID: 0}
-    - target: {fileID: 4636390467300734140, guid: 2df497991c3232a4189551caaab8b8a7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2df497991c3232a4189551caaab8b8a7, type: 3}
 --- !u!4 &2691832596856956951 stripped
@@ -182,7 +177,7 @@ PrefabInstance:
     - target: {fileID: 4029975315589392941, guid: 820ba2299eed1da49a51bd7088c76f3a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820ba2299eed1da49a51bd7088c76f3a, type: 3}
