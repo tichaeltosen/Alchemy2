@@ -20,6 +20,9 @@ public class ItemProperties : MonoBehaviour
     private bool potion_interactable;
     [SerializeField]
     private bool book;
+    [SerializeField]
+    private bool endPotion;
+
     private bool rStatus;
 
 
@@ -58,6 +61,17 @@ public class ItemProperties : MonoBehaviour
         else if (potion_interactable)
         {
             //
+
+        }
+
+        else if (endPotion)
+        {
+            if(PotionEffects.instance.potionEffectActive)
+            {
+                PotionEffects.instance.breakRoutine = true;
+            }
+            
+
 
         }
 

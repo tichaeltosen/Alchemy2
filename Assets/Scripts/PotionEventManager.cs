@@ -6,7 +6,9 @@ public class PotionEventManager : MonoBehaviour
 {
     public delegate void ClickAction();
     public static event ClickAction PotionCreate, PotionInstantiate;
+    [HideInInspector]
     public string potionReturn;
+    [HideInInspector]
     public bool potionEquipped; 
     public static PotionEventManager instance;
 

@@ -6,6 +6,7 @@ public class Moon : MonoBehaviour
 {
     private string potionReturn;
     GameObject moonEffect;
+    public float potionTime = 20f;
 
     private void OnEnable()
     {
@@ -20,11 +21,22 @@ public class Moon : MonoBehaviour
 
     public void MoonEffect()
     {
-        Debug.Log("Moon Effect Starting");
+        StartCoroutine(Display());
+        
+    }
+
+    private IEnumerator Display()
+    {
         moonEffect = GameObject.FindGameObjectWithTag("MoonEffect");
         moonEffect.GetComponent<SpriteRenderer>().enabled = true;
+        yield return new WaitForSeconds(2);
+        Debug.Log("Turn Off Moon Effect");
+        yield return new WaitForSeconds(2);
+
+        moonEffect.GetComponent<SpriteRenderer>().enabled = false;
         UsePotion.Effect -= MoonEffect;
-        Debug.Log("Moon Effect Complete!");
+
+
     }
 
 }

@@ -55,55 +55,81 @@ public class RaycastManager : MonoBehaviour
 
         if (Physics.Raycast(transform.position, fwd, out hit, rayLength, newLayerMask.value))
         {
+            //.............Select Element...................
+
             if (hit.collider.CompareTag("Element") && GameManager.instance.count < 2)
             {
-                CrosshairActive();
                 raycastedObj = hit.collider.gameObject;
                 IElement RackStatus = raycastedObj.GetComponent<IElement>();
-                itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
-                if (Input.GetMouseButtonDown(0))
+                if (raycastedObj.GetComponent<IElement>() != null)
                 {
-                    // do something
-
-                    if (raycastedObj.GetComponent<IElement>() != null)
+                    rStatus = RackStatus.IsRacked();
+                }
+                if (!rStatus)
+                {
+                    CrosshairActive();
+                    itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
+                    if (Input.GetMouseButtonDown(0))
                     {
-                        rStatus = RackStatus.IsRacked();
+                        raycastedObj.GetComponent<ItemProperties>().Interaction();
 
                     }
-
-                    raycastedObj.GetComponent<ItemProperties>().Interaction();
-                    // add to list of chosen elements
-
-                    if (rStatus)
+                }else if (rStatus)
+                {
+                    CrosshairActive();
+                    itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
+                    if (Input.GetMouseButtonDown(0))
                     {
+
+                        raycastedObj.GetComponent<ItemProperties>().Interaction();
+                        // add to list of chosen elements
                         chosenElements.Add(raycastedObj.name);
                         Debug.Log("Chosen Element is : " + raycastedObj.name);
-
                     }
-
+        
                 }
             }
+            //.............Make Potion...................
+
             else if (hit.collider.CompareTag("MakePotion"))
             {
                 CrosshairActive();
                 raycastedObj = hit.collider.gameObject;
 
-                if (GameManager.instance.count < 2 && !creatingPotion)
+                if (!PotionEffects.instance.potionEffectActive)
                 {
-                    itemNameText.text = "Choose Elements To Create Potion";
+                    if (GameManager.instance.count < 2 && !creatingPotion)
+                    {
+                        itemNameText.text = "Choose Elements To Create Potion";
 
-                }
-                else if (GameManager.instance.count == 2 && !creatingPotion)
+                    }
+                    else if (GameManager.instance.count == 2 && !creatingPotion)
+                    {
+                        itemNameText.text = "Click To Create Potion";
+
+                    }
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        raycastedObj.GetComponent<PotionEventManager>().CreatingPotion();
+                    }
+                }else if (PotionEffects.instance.potionEffectActive)
                 {
-                    itemNameText.text = "Click To Create Potion";
-
+                    itemNameText.text = "Wait For Current Potion To End...";
                 }
+            }
+            else if (hit.collider.CompareTag("End-Potion") && PotionEffects.instance.potionEffectActive)
+            {
+                CrosshairActive();
+                raycastedObj = hit.collider.gameObject;
+                itemNameText.text = "Click To End Potion";
                 if (Input.GetMouseButtonDown(0))
                 {
-                    raycastedObj.GetComponent<PotionEventManager>().CreatingPotion();
+                    raycastedObj.GetComponent<ItemProperties>().Interaction();
+
                 }
 
             }
+            //.............End Potion...................
         }
         else
         {
@@ -124,6 +150,8 @@ public class RaycastManager : MonoBehaviour
 
         if (Physics.Raycast(transform.position, fwd, out hit, rayLength, newLayerMask.value))
         {
+            //.............Put Potion On Object...................
+
             if (hit.collider.CompareTag("Potion-Interactable"))
             {
 
@@ -150,6 +178,8 @@ public class RaycastManager : MonoBehaviour
         }
         else
         {
+            //.............Nothing...................
+
             itemNameText.text = "";
             potionObject = GameObject.FindWithTag("Potion");
             Renderer[] renderers = potionObject.GetComponentsInChildren<Renderer>();
