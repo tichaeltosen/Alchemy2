@@ -11,6 +11,7 @@ TagManager:
   - Potion-Interactable
   - Potion
   - MoonEffect
+  - End-Potion
   layers:
   - Default
   - TransparentFX

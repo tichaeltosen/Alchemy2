@@ -29,10 +29,12 @@ public class InstantiatePotion : MonoBehaviour
         {
             case "Moon":
                 InstPotion(moon);
+                UsePotion.Effect += PotionEffects.instance.Moon;
                 break;
 
             case "Sun":
                 InstPotion(sun);
+                UsePotion.Effect += PotionEffects.instance.Sun;
                 break;
 
             case "Feather":
@@ -49,6 +51,8 @@ public class InstantiatePotion : MonoBehaviour
 
             case "Shrinking":
                 InstPotion(shrinking);
+                UsePotion.Effect += PotionEffects.instance.Shrinking;
+
                 break;
 
             case "Electric":
