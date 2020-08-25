@@ -11,7 +11,6 @@ public class InstantiatePotion : MonoBehaviour
 
     private string potion;
     private Transform Appear;
-
     private void Start()
     {
         PotionEventManager.PotionInstantiate += PotionToGame;
@@ -39,36 +38,42 @@ public class InstantiatePotion : MonoBehaviour
 
             case "Feather":
                 InstPotion(feather);
+                UsePotion.Effect += PotionEffects.instance.Feather;
                 break;
 
             case "Strength":
                 InstPotion(strength);
+                UsePotion.Effect += PotionEffects.instance.Strength;
                 break;
 
             case "Fertility":
                 InstPotion(fertility);
+                UsePotion.Effect += PotionEffects.instance.Fertility;
                 break;
 
             case "Shrinking":
                 InstPotion(shrinking);
-                UsePotion.Effect += PotionEffects.instance.Shrinking;
+                UsePotion.Effect += PlayerShrink.instance.Shrinking;
 
                 break;
 
             case "Electric":
                 InstPotion(electric);
+                UsePotion.Effect += PotionEffects.instance.Electric;
                 break;
 
             case "Heavy":
                 InstPotion(heavy);
+                UsePotion.Effect += PotionEffects.instance.Heavy;
                 break;
 
             case "Sound":
                 InstPotion(sound);
+                UsePotion.Effect += PotionEffects.instance.Sound;
                 break;
 
             case "None":
-                //do something for default no potion 
+                //do something for default no potion
                 break;
         }
 

@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class PotionEffects : MonoBehaviour
 {
-    public GameObject moonEffect, sunEffect, player;
+    public GameObject moonEffect, sunEffect, player, fertilityEffect;
     public float effectTime = 30;
     public static PotionEffects instance;
     public bool breakRoutine;
     public bool potionEffectActive;
     public int time = 0;
-    public float fadeTime = 2f;
-    public float lerpNumber = 0f;
-    public float shrinkHeight = 2f;
+
 
     private float startingHeight;
 
@@ -21,11 +19,7 @@ public class PotionEffects : MonoBehaviour
     {
         instance = this;
     }
-    private void Start()
-    {
-        startingHeight = player.GetComponent<CharacterController>().height;
-      
-    }
+
     public void TimeCount()
     {
         time += 1;
@@ -45,59 +39,53 @@ public class PotionEffects : MonoBehaviour
 
     }
 
-    public void Shrinking()
-    {
-        StartCoroutine(Shrink());
-        UsePotion.Effect -= Shrinking;
+ 
 
+    public void Strength()
+    {
+        UsePotion.Effect -= Strength;
+
+    }
+
+    public void Feather()
+    {
+        UsePotion.Effect -= Feather;
+
+    }
+
+    public void Electric()
+    {
+        UsePotion.Effect -= Electric;
+
+    }
+
+    public void Heavy()
+    {
+        UsePotion.Effect -= Heavy;
+
+    }
+
+    public void Sound()
+    {
+        UsePotion.Effect -= Sound;
+
+    }
+
+
+    public void Fertility()
+    {
+        StartCoroutine(Reveal(fertilityEffect));
+        UsePotion.Effect -= Sun;
     }
 
 
 
 
     //.... Shrinking..........................
-    private IEnumerator Shrink()
-    {
-        time = 0;
-        potionEffectActive = true;
-
-        for (float t = 0.01f; t < fadeTime; t += 0.1f)
-        {
-            lerpNumber = Mathf.Lerp(startingHeight, shrinkHeight, t / fadeTime);
-            player.GetComponent<CharacterController>().height = lerpNumber;
-            yield return null;
-        }
-
-        while (time != 30)
-        {
-            TimeCount();
-            yield return new WaitForSeconds(1);
-            Debug.Log("Time" + time);
-            if (breakRoutine || time == effectTime)
-            {
-                StartCoroutine(Grow());
-                potionEffectActive = false;
-                breakRoutine = false;
-                yield break;
-            }
-        }
+    
 
 
-    }
-
-    private IEnumerator Grow()
-    {
-        for (float t = 0.01f; t < fadeTime; t += 0.1f)
-        {
-            lerpNumber = Mathf.Lerp(shrinkHeight, startingHeight, t / fadeTime);
-            player.GetComponent<CharacterController>().height = lerpNumber;
-            yield return null;
-
-        }
-    }
-
-
-    // ....... for sun and moon ............................
+    // ....... for sun / moon / fertility-action1 ............................
     private IEnumerator Reveal(GameObject pEffect)
     {
         time = 0;
