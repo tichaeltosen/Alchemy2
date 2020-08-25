@@ -70,7 +70,8 @@ public class ItemProperties : MonoBehaviour
 
             if (itemName == "Quill" && potion == "Feather")
             {
-                UsePotion.Effect += PlayerFloat.instance.Feather;
+                UsePotion.Effect += HiddenDoor.instance.ShowDoor;
+                UsePotion.Effect += BalanceScale.instance.Balance;
                 scaleBalanced = true;
             }
 
