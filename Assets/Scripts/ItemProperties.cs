@@ -13,8 +13,6 @@ public class ItemProperties : MonoBehaviour
     public GameObject chosenElement;
     public GameObject potionTable1;
     public GameObject potionTable2;
-    public bool scaleBalanced;
-
 
     [SerializeField]
     private bool element;
@@ -61,6 +59,17 @@ public class ItemProperties : MonoBehaviour
         {
             RackStatus.ChangeRackedStatus();
             RackStatus.MoveElement();
+            if(gameObject.name == "Sulfur")
+            {
+                //
+                GameManager.instance.sulfurState = true;
+            }
+
+            //break potion spell if active when new element found
+            if (PotionEffects.instance.potionEffectActive)
+            {
+                PotionEffects.instance.breakRoutine = true;
+            }
 
         }
 
@@ -72,8 +81,16 @@ public class ItemProperties : MonoBehaviour
             {
                 UsePotion.Effect += HiddenDoor.instance.ShowDoor;
                 UsePotion.Effect += BalanceScale.instance.Balance;
-                scaleBalanced = true;
+            }else if(itemName == "Skull" && potion == "Heavy")
+            {
+                UsePotion.Effect += HiddenDoor.instance.ShowDoor;
+                UsePotion.Effect += BalanceScale.instance.Balance;
             }
+            else
+            {
+                //trigger default pouring sound and maybe "potion doesn't work on this object
+            }
+
 
         }
 

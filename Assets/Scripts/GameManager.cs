@@ -5,9 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    private IPersistable [] elements = new IPersistable[3];
-
     public int count = 0;
+    public bool sulfurState;
+    public bool circleStatus;
 
     private void Awake()
     {
@@ -20,21 +20,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-        
-    }
-
-    // void OnDisable()
-    //{
-    //    foreach (IPersistable persistable in elements)
-    //    {
-    //        persistable.Save();
-    //    }
-        
-    //}
 
 
 }

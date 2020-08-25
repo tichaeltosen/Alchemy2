@@ -43,12 +43,12 @@ public class InstantiatePotion : MonoBehaviour
 
             case "Strength":
                 InstPotion(strength);
-                UsePotion.Effect += PotionEffects.instance.Strength;
                 break;
 
             case "Fertility":
                 InstPotion(fertility);
                 UsePotion.Effect += PotionEffects.instance.Fertility;
+                UsePotion.Effect += FertEnd.instance.LightEnd;
                 break;
 
             case "Shrinking":
@@ -59,7 +59,6 @@ public class InstantiatePotion : MonoBehaviour
 
             case "Electric":
                 InstPotion(electric);
-                UsePotion.Effect += PotionEffects.instance.Electric;
                 break;
 
             case "Heavy":
@@ -69,7 +68,6 @@ public class InstantiatePotion : MonoBehaviour
 
             case "Sound":
                 InstPotion(sound);
-                UsePotion.Effect += PotionEffects.instance.Sound;
                 break;
 
             case "None":

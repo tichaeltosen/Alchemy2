@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PotionEffects : MonoBehaviour
 {
-    public GameObject moonEffect, sunEffect, player, fertilityEffect;
+    public GameObject moonEffect, sunEffect, fertilityEffect;
     public float effectTime = 30;
     public static PotionEffects instance;
+    [HideInInspector]
     public bool breakRoutine;
+    [HideInInspector]
     public bool potionEffectActive;
+    [HideInInspector]
     public int time = 0;
 
 
@@ -27,61 +30,35 @@ public class PotionEffects : MonoBehaviour
 
     public void Moon()
     {
-        StartCoroutine(Reveal(moonEffect));
+        if (!RaycastManager.instance.isPotionObject)
+        {
+            StartCoroutine(Reveal(moonEffect));
+        }
 
         UsePotion.Effect -= Moon;
     }
 
     public void Sun()
     {
-        StartCoroutine(Reveal(sunEffect));
+        if (!RaycastManager.instance.isPotionObject)
+        {
+           StartCoroutine(Reveal(sunEffect));
+        }
         UsePotion.Effect -= Sun;
-
-    }
-
- 
-
-    public void Strength()
-    {
-        UsePotion.Effect -= Strength;
-
-    }
-
-    public void Feather()
-    {
-        UsePotion.Effect -= Feather;
-
-    }
-
-    public void Electric()
-    {
-        UsePotion.Effect -= Electric;
-
-    }
-
-    public void Heavy()
-    {
-        UsePotion.Effect -= Heavy;
-
-    }
-
-    public void Sound()
-    {
-        UsePotion.Effect -= Sound;
 
     }
 
 
     public void Fertility()
     {
-        StartCoroutine(Reveal(fertilityEffect));
-        UsePotion.Effect -= Sun;
+        if (!RaycastManager.instance.isPotionObject)
+        {
+            StartCoroutine(Reveal(fertilityEffect));
+
+        }
+        UsePotion.Effect -= Fertility;
     }
 
-
-
-
-    //.... Shrinking..........................
     
 
 
@@ -91,7 +68,7 @@ public class PotionEffects : MonoBehaviour
         time = 0;
         potionEffectActive = true;
         pEffect.SetActive(true);
-        while(time != 30)
+        while(time != effectTime)
         {
             TimeCount();
             yield return new WaitForSeconds(1);

@@ -27,7 +27,10 @@ public class PlayerShrink : MonoBehaviour
 
     public void Shrinking()
     {
-        StartCoroutine(Shrink());
+        if (!RaycastManager.instance.isPotionObject)
+        {
+            StartCoroutine(Shrink());
+        }
         UsePotion.Effect -= Shrinking;
 
     }
@@ -44,7 +47,7 @@ public class PlayerShrink : MonoBehaviour
             yield return null;
         }
 
-        while (PotionEffects.instance.time != 30)
+        while (PotionEffects.instance.time != effectTime)
         {
             PotionEffects.instance.TimeCount();
             yield return new WaitForSeconds(1);

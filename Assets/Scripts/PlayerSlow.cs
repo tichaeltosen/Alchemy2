@@ -28,9 +28,11 @@ public class PlayerSlow : MonoBehaviour
 
     public void Slow()
     {
-        StartCoroutine(pSlow());
+        if (ItemProperties.instance.itemName != "Skull" && !RaycastManager.instance.isPotionObject)
+        {
+            StartCoroutine(pSlow());
+        }
         UsePotion.Effect -= Slow;
-
 
     }
 
@@ -40,7 +42,7 @@ public class PlayerSlow : MonoBehaviour
         PotionEffects.instance.potionEffectActive = true;
         playerMove.speed = slowSpeed;
 
-        while (PotionEffects.instance.time != 30)
+        while (PotionEffects.instance.time != effectTime)
         {
             PotionEffects.instance.TimeCount();
             yield return new WaitForSeconds(1);

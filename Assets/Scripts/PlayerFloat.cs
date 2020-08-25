@@ -38,7 +38,7 @@ public class PlayerFloat : MonoBehaviour
         PotionEffects.instance.potionEffectActive = true;
         pMove.Float();
 
-        while (PotionEffects.instance.time != 30)
+        while (PotionEffects.instance.time != effectTime)
         {
             PotionEffects.instance.TimeCount();
             yield return new WaitForSeconds(1);
