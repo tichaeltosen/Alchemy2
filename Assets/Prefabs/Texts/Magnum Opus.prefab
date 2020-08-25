@@ -159,10 +159,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\nLaboring here, I have finally developed lapis philosophorum. Used externally,
+  m_Text: "\nLaboring here, I have finally developed Lapis philosophorum. Used externally,
     this substance will transmute a base into a prime. Internally, I believe it can
     have the same properties.\n\nMy dreams have grown darker as of late. I ingested
-    l. Philosophorum 3 days ago, and since then I have begun to hear whispers from
+    L. philosophorum 3 days ago, and since then I have begun to hear whispers from
     the corners of my lab. Am I growing closer to piercing the veil?\n\nI\u2019ve
     found something.\n"
 --- !u!1 &6899703693419999872
@@ -182,7 +182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6899703693419999873
 RectTransform:
   m_ObjectHideFlags: 0

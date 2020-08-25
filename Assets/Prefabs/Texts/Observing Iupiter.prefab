@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -60}
-  m_SizeDelta: {x: 485, y: 500}
+  m_AnchoredPosition: {x: 10, y: 0}
+  m_SizeDelta: {x: 425, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8700540297141012981
 CanvasRenderer:
@@ -80,8 +80,8 @@ MonoBehaviour:
   m_Text: 'Observing the great Iupiter through a looking glass, one can see the great
     red spot twisting and cycling amidst the running trails of spirituous fluid that
     comprise the orb. Both the Babylonians and Egyptians share the belief that this
-    is The Great Fox Spirit, banished to the heavens for stealing fire, he and his
-    progeny dyed red for his wrongdoing and left to race forever, running a circle
+    is The Great Fox Spirit, banished to the heavens for stealing fire, she and her
+    progeny dyed red for her wrongdoing and left to race forever, running a circle
     within an orb, within an orb.
 
 '

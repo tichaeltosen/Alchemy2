@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -119}
-  m_SizeDelta: {x: 485, y: 500}
+  m_AnchoredPosition: {x: 10, y: 0}
+  m_SizeDelta: {x: 450, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8879887418130406458
 CanvasRenderer:
@@ -155,6 +155,6 @@ MonoBehaviour:
   m_Text: "The rhythm of great cycles and small cycles beat the same.\n\nMonday\u2019s
     child is fair of face\u263D\nTuesday\u2019s child is full of grace\u2642\nWednesday\u2019s
     child is full of woe\u263F\nThursday\u2019s child has far to go \u2643\nFriday\u2019s
-    child is loving and giving \u2640\nSaturday\u2019s child works hard for his living
+    child is loving and giving\u2640\nSaturday\u2019s child works hard for his living
     \u2644\nAnd the child that is born on the Golden day\u2609\nIs bonny and blithe,
     and good and gay."

@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -60}
-  m_SizeDelta: {x: 485, y: 500}
+  m_AnchoredPosition: {x: 10, y: 0}
+  m_SizeDelta: {x: 425, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6645206293229610319
 CanvasRenderer:
@@ -141,7 +141,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e96b602d7ea9b48dfaf3157a987016ee, type: 3}
-    m_FontSize: 28
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -152,9 +152,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "You awake in a laboratory, your mind blank. You attempt to find an exit
-    but the doors have been barred. There is a vague familiarity to your surroundings
-    and the equipment. Is it yours? A benefactors? A tormentor's? You can\u2019t
-    be sure. Notes lie strewn about the laboratory, hinting at the work to be done.
-    Start soon. Things may change sooner than later.\n\nTry exploring the lab or
-    creating  an alchemical potion."
+  m_Text: "How many moons, how many annum, have I labored down here in my laboratory?
+    My alchemy set is my sole companion, endowing me with the power of earth, air,
+    fire, and water, giving me the power to bend metals to my will. I believe I am
+    on the verge of a breakthrough. L. philosophorum is closer than ever. \n\nBut
+    strange happenings are afoot. I wake with lapses in my memory, unfamiliar notes
+    on my desk, my elements misplaced. It feels as though somebody is toying with
+    me. Or perhaps these tantalizing elixirs I\u2019m brewing have unforeseen side
+    effects\u2026 Am I descending into madness? I must finish my work, and escape
+    this place. \n"
