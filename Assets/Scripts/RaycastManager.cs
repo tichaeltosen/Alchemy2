@@ -9,6 +9,8 @@ public class RaycastManager : MonoBehaviour
     public Text itemNameText;
     public bool creatingPotion;
     public List<string> chosenElements = new List<string>();
+    public bool isPotionObject;
+
 
 
     private GameObject raycastedObj;
@@ -41,7 +43,9 @@ public class RaycastManager : MonoBehaviour
         {
             CrosshairNormal();
             PotionDisabled();
-        }else if (PotionEventManager.instance.potionEquipped)
+            isPotionObject = false;
+        }
+        else if (PotionEventManager.instance.potionEquipped)
         {
             CrossHairDisabled();
             PotionEnabled();
@@ -154,7 +158,7 @@ public class RaycastManager : MonoBehaviour
 
             if (hit.collider.CompareTag("Potion-Interactable"))
             {
-
+                isPotionObject = true;
                 potionObject = GameObject.FindWithTag("Potion");
                 Renderer[] renderers = potionObject.GetComponentsInChildren<Renderer>();
                 foreach(Renderer r in renderers)
@@ -181,6 +185,7 @@ public class RaycastManager : MonoBehaviour
             //.............Nothing...................
 
             itemNameText.text = "";
+            isPotionObject = false;
             potionObject = GameObject.FindWithTag("Potion");
             Renderer[] renderers = potionObject.GetComponentsInChildren<Renderer>();
             foreach (Renderer r in renderers)

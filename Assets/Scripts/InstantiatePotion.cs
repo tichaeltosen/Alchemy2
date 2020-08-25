@@ -38,7 +38,8 @@ public class InstantiatePotion : MonoBehaviour
 
             case "Feather":
                 InstPotion(feather);
-                UsePotion.Effect += PotionEffects.instance.Feather;
+                UsePotion.Effect += PlayerFloat.instance.Feather;
+                //add one for the feather on the scale too
                 break;
 
             case "Strength":

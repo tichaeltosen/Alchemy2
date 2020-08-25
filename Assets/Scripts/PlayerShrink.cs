@@ -28,7 +28,6 @@ public class PlayerShrink : MonoBehaviour
     public void Shrinking()
     {
         StartCoroutine(Shrink());
-        Debug.Log("Shrinking Activated");
         UsePotion.Effect -= Shrinking;
 
     }
