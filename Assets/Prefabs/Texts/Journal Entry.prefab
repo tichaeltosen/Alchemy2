@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6645206292693032594}
   - component: {fileID: 6645206292693032593}
   m_Layer: 5
-  m_Name: Basic Tutorial Note
+  m_Name: Journal Entry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 6645206292693032599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
   - {fileID: 6645206293229610317}
   m_Father: {fileID: 0}
@@ -102,7 +102,7 @@ RectTransform:
   m_GameObject: {fileID: 6645206293229610316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6645206292693032592}
   m_RootOrder: 0
@@ -110,7 +110,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 10, y: 0}
-  m_SizeDelta: {x: 425, y: 500}
+  m_SizeDelta: {x: 850, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6645206293229610319
 CanvasRenderer:
@@ -141,7 +141,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e96b602d7ea9b48dfaf3157a987016ee, type: 3}
-    m_FontSize: 24
+    m_FontSize: 46
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "How many moons, how many annum, have I labored down here in my laboratory?
+  m_Text: "How many moons, how many annum, have I labored down here in my workshop?
     My alchemy set is my sole companion, endowing me with the power of earth, air,
     fire, and water, giving me the power to bend metals to my will. I believe I am
     on the verge of a breakthrough. L. philosophorum is closer than ever. \n\nBut
