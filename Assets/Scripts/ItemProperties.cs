@@ -6,12 +6,14 @@ using UnityEngine.UI;
 
 public class ItemProperties : MonoBehaviour
 {
+    public static ItemProperties instance;
 
     [Header("Item Type")]
     public string itemName;
     public GameObject chosenElement;
     public GameObject potionTable1;
     public GameObject potionTable2;
+    public bool scaleBalanced;
 
 
     [SerializeField]
@@ -22,10 +24,14 @@ public class ItemProperties : MonoBehaviour
     private bool book;
     [SerializeField]
     private bool endPotion;
-
+    private string potion;
     private bool rStatus;
 
 
+    private void Awake()
+    {
+        instance = this;
+    }
 
     public void Interaction()
     {
@@ -60,7 +66,14 @@ public class ItemProperties : MonoBehaviour
 
         else if (potion_interactable)
         {
-            //
+            potion = PotionEventManager.instance.potionReturn;
+
+            if (itemName == "Quill" && potion == "Feather")
+            {
+                UsePotion.Effect += HiddenDoor.instance.ShowDoor;
+                UsePotion.Effect += BalanceScale.instance.Balance;
+                scaleBalanced = true;
+            }
 
         }
 
@@ -70,8 +83,6 @@ public class ItemProperties : MonoBehaviour
             {
                 PotionEffects.instance.breakRoutine = true;
             }
-            
-
 
         }
 
