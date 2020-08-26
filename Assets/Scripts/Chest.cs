@@ -15,6 +15,4 @@ public abstract class Chest : MonoBehaviour
         get; set;
     }
 
-
-
 }
