@@ -27,15 +27,15 @@ RectTransform:
   m_GameObject: {fileID: 2948965725846216947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2948965726030495908}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 282, y: -47}
-  m_SizeDelta: {x: 260, y: 350}
+  m_AnchoredPosition: {x: 282, y: -40}
+  m_SizeDelta: {x: 520, y: 650}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2948965725846216940
 CanvasRenderer:
@@ -66,7 +66,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c46555763ee80479d94d55d09b653a8b, type: 3}
-    m_FontSize: 16
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -109,7 +109,7 @@ RectTransform:
   m_GameObject: {fileID: 2948965726030495909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_Children:
   - {fileID: 2948965727604017063}
   - {fileID: 2948965725846216946}
@@ -185,15 +185,15 @@ RectTransform:
   m_GameObject: {fileID: 2948965727604017060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2948965726030495908}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -279, y: -41}
-  m_SizeDelta: {x: 260, y: 350}
+  m_AnchoredPosition: {x: -290, y: -15}
+  m_SizeDelta: {x: 520, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2948965727604017057
 CanvasRenderer:
@@ -224,7 +224,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c46555763ee80479d94d55d09b653a8b, type: 3}
-    m_FontSize: 16
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -238,5 +238,5 @@ MonoBehaviour:
   m_Text: "Earthly matter bends to the will of the celestial. As each celestial orb
     rotates through the heavens, its earthly correspondent of matter ebbs and flows
     in potential. \n\nThe Moon is our closest neighbor, its clear white light reflected
-    in earthly silver.\n\nMars\u2019s sands shine red, the powdered remains of olympian
+    in earthly silver.\n\nThe sands of Mars shine red, the powdered remains of olympian
     iron.\n\nMercury slips around the sun with the same ease as its namesake.\n"
