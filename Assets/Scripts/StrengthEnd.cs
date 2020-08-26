@@ -42,7 +42,7 @@ public class StrengthEnd : MonoBehaviour
             if (GameManager.instance.circleStatus)
             {
                 //Trigger the Light Ending
-                Debug.Log("Starting the Dark Ending");
+                ExitDoor.instance.DarkExit();
 
             }
             if (PotionEffects.instance.breakRoutine || PotionEffects.instance.time == effectTime)

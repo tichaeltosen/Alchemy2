@@ -42,7 +42,7 @@ public class FertEnd : MonoBehaviour
             if (GameManager.instance.circleStatus)
             {
                 //Trigger the Light Ending
-                Debug.Log("Starting the Light Ending");
+                ExitDoor.instance.LightExit();
 
             }
             if (PotionEffects.instance.breakRoutine || PotionEffects.instance.time == effectTime)
