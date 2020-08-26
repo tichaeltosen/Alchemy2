@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chest : MonoBehaviour
+public abstract class Chest : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string title
     {
-        
+        get; set;
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public bool isLocked
     {
-        
+        get; set;
     }
+
+
+
 }

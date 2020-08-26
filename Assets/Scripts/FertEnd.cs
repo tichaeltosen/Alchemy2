@@ -13,6 +13,11 @@ public class FertEnd : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+        effectTime = PotionEffects.instance.effectTime;
+
+    }
     public void LightEnd()
     {
         if (!RaycastManager.instance.isPotionObject && GameManager.instance.sulfurState)
@@ -30,13 +35,14 @@ public class FertEnd : MonoBehaviour
 
         while (PotionEffects.instance.time != effectTime)
         {
+
             PotionEffects.instance.TimeCount();
             yield return new WaitForSeconds(1);
-            Debug.Log("Time" + PotionEffects.instance.time);
+
             if (GameManager.instance.circleStatus)
             {
                 //Trigger the Light Ending
-
+                Debug.Log("Starting the Light Ending");
 
             }
             if (PotionEffects.instance.breakRoutine || PotionEffects.instance.time == effectTime)

@@ -72,7 +72,6 @@ public class PotionEffects : MonoBehaviour
         {
             TimeCount();
             yield return new WaitForSeconds(1);
-            Debug.Log("Time" + time);
             if (breakRoutine || time == effectTime)
             {
                 potionEffectActive = false;

@@ -46,7 +46,6 @@ public class PlayerSlow : MonoBehaviour
         {
             PotionEffects.instance.TimeCount();
             yield return new WaitForSeconds(1);
-            Debug.Log("Time" + PotionEffects.instance.time);
             if (PotionEffects.instance.breakRoutine || PotionEffects.instance.time == effectTime)
             {
                 playerMove.speed = normalSpeed;
