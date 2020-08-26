@@ -10,20 +10,27 @@ public class ItemProperties : MonoBehaviour
 
     [Header("Item Type")]
     public string itemName;
+    [Header("Element Variant")]
     public GameObject chosenElement;
+    [Header("Variant Positions")]
     public GameObject potionTable1;
     public GameObject potionTable2;
 
+    [Header("Type Of Object")]
     [SerializeField]
     private bool element;
     [SerializeField]
-    private bool potion_interactable;
+    private bool potionInteractable;
     [SerializeField]
     private bool book;
     [SerializeField]
     private bool endPotion;
+    [SerializeField]
+    private bool chest;
+
     private string potion;
     private bool rStatus;
+    private bool lStatus;
 
 
     private void Awake()
@@ -35,9 +42,17 @@ public class ItemProperties : MonoBehaviour
     {
 
         IElement RackStatus = gameObject.GetComponent<IElement>();
+        IChest LockedStatus = gameObject.GetComponent<IChest>();
+
         if (gameObject.GetComponent<IElement>() != null)
         {
            rStatus = RackStatus.IsRacked();
+
+        }
+
+        if (gameObject.GetComponent<IChest>() != null)
+        {
+            lStatus = LockedStatus.IsLocked();
 
         }
 
@@ -73,15 +88,15 @@ public class ItemProperties : MonoBehaviour
 
         }
 
-        else if (potion_interactable)
+        else if (potionInteractable)
         {
             potion = PotionEventManager.instance.potionReturn;
 
-            if (itemName == "Quill" && potion == "Feather")
+            if (itemName == "Quill" && potion == "Heavy")
             {
                 UsePotion.Effect += HiddenDoor.instance.ShowDoor;
                 UsePotion.Effect += BalanceScale.instance.Balance;
-            }else if(itemName == "Skull" && potion == "Heavy")
+            }else if(itemName == "Skull" && potion == "Feather")
             {
                 UsePotion.Effect += HiddenDoor.instance.ShowDoor;
                 UsePotion.Effect += BalanceScale.instance.Balance;
@@ -102,7 +117,20 @@ public class ItemProperties : MonoBehaviour
             }
 
         }
+        //...............Chest....................
+        else if (chest && lStatus)
+        {
+            if (itemName == "Strength Chest")
+            {
+                RaycastManager.instance.itemNameText.text = "You Need More Strength To Open";
 
+            }
+        }
+
+        else if(chest && !lStatus)
+        {
+            gameObject.GetComponent<OpenChest>().Open();
+        }
 
     }
 

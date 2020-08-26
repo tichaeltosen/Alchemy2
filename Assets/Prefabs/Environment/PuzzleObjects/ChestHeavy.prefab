@@ -44,9 +44,13 @@ GameObject:
   - component: {fileID: 3198844679531256549}
   - component: {fileID: 3198844679530125349}
   - component: {fileID: 3198844679532054246}
-  m_Layer: 0
+  - component: {fileID: 24804799}
+  - component: {fileID: 24804800}
+  - component: {fileID: 24804801}
+  - component: {fileID: 24804802}
+  m_Layer: 8
   m_Name: Chest_Closed
-  m_TagString: Untagged
+  m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -127,6 +131,67 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 49a09859e5b53d74b8038a042b0e7d3b, type: 3}
+--- !u!114 &24804799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198844679532054245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26fe8169741f745ffae1016dc70214df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chestStatus: {fileID: 24804801}
+--- !u!114 &24804800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198844679532054245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0fb51531309842fbb417a0c001290b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closed: {fileID: 3198844679532054245}
+  open: {fileID: 6619739409605296504}
+--- !u!114 &24804801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198844679532054245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 950b0e7f498f5499387d7eb281a045f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockedStatus: 1
+--- !u!114 &24804802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198844679532054245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c1c95414758a4ecd9996102fa29a48a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Strength Chest
+  chosenElement: {fileID: 0}
+  potionTable1: {fileID: 0}
+  potionTable2: {fileID: 0}
+  element: 0
+  potionInteractable: 0
+  book: 0
+  endPotion: 0
+  chest: 1
 --- !u!1 &6619739409605296504
 GameObject:
   m_ObjectHideFlags: 0

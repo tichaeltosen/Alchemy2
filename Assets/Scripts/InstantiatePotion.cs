@@ -42,6 +42,9 @@ public class InstantiatePotion : MonoBehaviour
                 break;
 
             case "Strength":
+                UsePotion.Effect += StrengthPotion.instance.StrengthChest;
+                UsePotion.Effect += StrengthEnd.instance.DarkEnd;
+
                 InstPotion(strength);
                 break;
 

@@ -93,6 +93,22 @@ public class RaycastManager : MonoBehaviour
         
                 }
             }
+
+            //................Chest..........................
+            else if (hit.collider.CompareTag("Chest"))
+            {
+                CrosshairActive();
+                raycastedObj = hit.collider.gameObject;
+                //itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
+
+                if (Input.GetMouseButtonDown(0))
+                {
+                    raycastedObj.GetComponent<ItemProperties>().Interaction();
+
+                }
+
+
+            }
             //.............Make Potion...................
 
             else if (hit.collider.CompareTag("MakePotion"))
@@ -121,6 +137,8 @@ public class RaycastManager : MonoBehaviour
                     itemNameText.text = "Wait For Current Potion To End...";
                 }
             }
+            //.............End Potion...................
+
             else if (hit.collider.CompareTag("End-Potion") && PotionEffects.instance.potionEffectActive)
             {
                 CrosshairActive();
@@ -133,8 +151,9 @@ public class RaycastManager : MonoBehaviour
                 }
 
             }
-            //.............End Potion...................
+          
         }
+        // ......................Nothing.....................
         else
         {
             CrosshairNormal();

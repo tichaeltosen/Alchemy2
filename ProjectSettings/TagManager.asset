@@ -12,6 +12,7 @@ TagManager:
   - Potion
   - MoonEffect
   - End-Potion
+  - Chest
   layers:
   - Default
   - TransparentFX
