@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6645206292693032599
+--- !u!1 &2514218259301280518
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,28 +8,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6645206292693032592}
-  - component: {fileID: 6645206292693032594}
-  - component: {fileID: 6645206292693032593}
+  - component: {fileID: 2514218259301280513}
+  - component: {fileID: 2514218259301280515}
+  - component: {fileID: 2514218259301280512}
   m_Layer: 5
-  m_Name: Journal Entry
+  m_Name: Final Entry, Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &6645206292693032592
+--- !u!224 &2514218259301280513
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6645206292693032599}
+  m_GameObject: {fileID: 2514218259301280518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
-  - {fileID: 6645206293229610317}
+  - {fileID: 2514218259838439644}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -38,21 +38,21 @@ RectTransform:
   m_AnchoredPosition: {x: 7, y: 2}
   m_SizeDelta: {x: 1024, y: 1280}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6645206292693032594
+--- !u!222 &2514218259301280515
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6645206292693032599}
+  m_GameObject: {fileID: 2514218259301280518}
   m_CullTransparentMesh: 0
---- !u!114 &6645206292693032593
+--- !u!114 &2514218259301280512
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6645206292693032599}
+  m_GameObject: {fileID: 2514218259301280518}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &6645206293229610316
+--- !u!1 &2514218259838439645
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,9 +83,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6645206293229610317}
-  - component: {fileID: 6645206293229610319}
-  - component: {fileID: 6645206293229610318}
+  - component: {fileID: 2514218259838439644}
+  - component: {fileID: 2514218259838439646}
+  - component: {fileID: 2514218259838439647}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -93,18 +93,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &6645206293229610317
+--- !u!224 &2514218259838439644
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6645206293229610316}
+  m_GameObject: {fileID: 2514218259838439645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6645206292693032592}
+  m_Father: {fileID: 2514218259301280513}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -112,21 +112,21 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: 0}
   m_SizeDelta: {x: 850, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6645206293229610319
+--- !u!222 &2514218259838439646
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6645206293229610316}
+  m_GameObject: {fileID: 2514218259838439645}
   m_CullTransparentMesh: 0
---- !u!114 &6645206293229610318
+--- !u!114 &2514218259838439647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6645206293229610316}
+  m_GameObject: {fileID: 2514218259838439645}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -141,23 +141,21 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e96b602d7ea9b48dfaf3157a987016ee, type: 3}
-    m_FontSize: 46
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 64
+    m_MaxSize: 80
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "How many moons, how many annorum have I labored down here in my workshop?
-    My alchemy set is my sole companion, endowing me with the power of earth, air,
-    fire, and water, giving me the power to bend metals to my will. I believe I am
-    on the verge of a breakthrough. L. philosophorum is closer than ever. \n\nBut
-    strange happenings are afoot. I wake with lapses in my memory, unfamiliar notes
-    on my desk, my elements misplaced. It feels as though somebody is toying with
-    me. Or perhaps these tantalizing elixirs I\u2019m brewing have unforeseen side
-    effects\u2026 Am I descending into madness? I must finish my work, and escape
-    this place. \n"
+  m_Text: "Final Entry ~\n\nTo whoever finds this laboratory: it is yours. The equipment,
+    the books, the recipes, and, most of all, The Philosopher\u2019s Stone, I bequeath
+    it all to you. I do not know how long I have labored down here with them, but
+    I know that I will do so no longer. The stone itself is ultimately a curse. Who
+    knows how many times I managed to create it, only to forget the recipe under
+    its fumes, and wake up having to piece together my own work. I now understand
+    what truly matters: freedom.\n"
