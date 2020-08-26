@@ -124,6 +124,14 @@ public class ItemProperties : MonoBehaviour
             {
                 RaycastManager.instance.itemNameText.text = "You Need More Strength To Open";
 
+            }else if(itemName == "Unlocked")
+            {
+                gameObject.GetComponent<OpenChest>().Open();
+
+            }else if(itemName == "Electric Chest")
+            {
+                RaycastManager.instance.itemNameText.text = "This Chest Requires Electricity";
+
             }
         }
 

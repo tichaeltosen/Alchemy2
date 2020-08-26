@@ -62,6 +62,7 @@ public class InstantiatePotion : MonoBehaviour
 
             case "Electric":
                 InstPotion(electric);
+                UsePotion.Effect += ElectricPotion.instance.ElectricChest;
                 break;
 
             case "Heavy":

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -5479721350141783405}
   - component: {fileID: 8262182288353284260}
   - component: {fileID: 8095819807524660196}
+  - component: {fileID: 2055892558}
   m_Layer: 8
   m_Name: Lead
   m_TagString: Element
@@ -113,8 +114,10 @@ MonoBehaviour:
   potionTable1: {fileID: 0}
   potionTable2: {fileID: 0}
   element: 1
-  potion_interactable: 0
+  potionInteractable: 0
   book: 0
+  endPotion: 0
+  chest: 0
 --- !u!114 &8095819807524660196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,3 +131,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementList: []
+--- !u!114 &2055892558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e675bd3242ea4213a504abf29d49c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rackStatus: 0
+  rackPos: {fileID: 0}
