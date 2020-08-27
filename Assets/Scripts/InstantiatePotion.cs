@@ -5,7 +5,7 @@ using UnityEngine;
 public class InstantiatePotion : MonoBehaviour
 {
     public GameObject getPotion;
-    public GameObject sun, moon, feather, strength, fertility, shrinking, electric, heavy, sound;
+    public GameObject sun, moon, feather, strength, fertility, shrinking, electric, heavy, sound, wine;
     public Transform player;
     public float distance = 2f;
 
@@ -73,6 +73,11 @@ public class InstantiatePotion : MonoBehaviour
             case "Sound":
                 InstPotion(sound);
                 UsePotion.Effect += SoundPotion.instance.SoundPo;
+                break;
+
+            case "Iron Wine":
+                InstPotion(wine);
+                UsePotion.Effect += PlayerReverse.instance.ReversePlayer;
                 break;
 
             case "None":

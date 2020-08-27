@@ -6,7 +6,7 @@ public class ShowHide : ElementData
 {
     GameObject[] variants;
     //list of elements on potion table
-    public bool rStatus;
+    public bool rackStatus;
 
     private void Start()
     {
@@ -40,13 +40,13 @@ public class ShowHide : ElementData
 
     public void ShowObject()
     {
-        IElement RackStatus = gameObject.GetComponent<IElement>();
+        IElement Rack = gameObject.GetComponent<IElement>();
         if (gameObject.GetComponent<IElement>() != null)
         {
-            rStatus = RackStatus.IsRacked();
+            rackStatus = Rack.IsRacked();
         }
 
-        if (rStatus)
+        if (rackStatus)
         {
             gameObject.SetActive(true);
 
