@@ -27,6 +27,7 @@ public class ItemProperties : MonoBehaviour
     private bool book;
     [SerializeField]
     private bool endPotion;
+
     [SerializeField]
     private bool chest;
     [SerializeField]
@@ -126,7 +127,7 @@ public class ItemProperties : MonoBehaviour
         {
             if (itemName == "Strength Chest")
             {
-                RaycastManager.instance.itemNameText.text = "You Need More Strength To Open";
+                RaycastManager.instance.itemNameText.text = "The lid is stuck. If only you were a little stronger...";
 
             }else if(itemName == "Unlocked")
             {
@@ -134,7 +135,7 @@ public class ItemProperties : MonoBehaviour
 
             }else if(itemName == "Electric Chest")
             {
-                RaycastManager.instance.itemNameText.text = "This Chest Requires Electricity";
+                RaycastManager.instance.itemNameText.text = "The chest seems to require energy of some sort...";
 
             }
         }
