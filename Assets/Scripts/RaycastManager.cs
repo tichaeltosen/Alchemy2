@@ -41,9 +41,9 @@ public class RaycastManager : MonoBehaviour
     {
         if (!PotionEventManager.instance.potionEquipped)
         {
+            isPotionObject = false;
             CrosshairNormal();
             PotionDisabled();
-            isPotionObject = false;
         }
         else if (PotionEventManager.instance.potionEquipped)
         {

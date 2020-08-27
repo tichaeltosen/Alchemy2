@@ -50,6 +50,7 @@ public class PotionEventManager : MonoBehaviour
         if (potionReturn != "None")
         {
             potionEquipped = true;
+            Debug.Log("Potion Equipped!");
         }
         yield return new WaitForSeconds(1);
 

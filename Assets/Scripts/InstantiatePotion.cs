@@ -72,6 +72,7 @@ public class InstantiatePotion : MonoBehaviour
 
             case "Sound":
                 InstPotion(sound);
+                UsePotion.Effect += SoundPotion.instance.SoundPo;
                 break;
 
             case "None":
