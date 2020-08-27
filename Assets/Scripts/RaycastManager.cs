@@ -55,9 +55,9 @@ public class RaycastManager : MonoBehaviour
     void PotionDisabled()
     {
         RaycastHit hit;
-        Vector3 fwd = transform.TransformDirection(Vector3.forward);        
+        Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
-        if (Physics.Raycast(transform.position, fwd, out hit, rayLength, newLayerMask.value))
+        if (Physics.Raycast(transform.position, fwd, out hit, rayLength, newLayerMask.value) && !GameManager.instance.textState)
         {
             //.............Select Element...................
 
@@ -120,7 +120,7 @@ public class RaycastManager : MonoBehaviour
                 {
                     if (GameManager.instance.count < 2 && !creatingPotion)
                     {
-                        itemNameText.text = "Choose Elements To Create Potion";
+                        itemNameText.text = "Choose Two Elements To Create Potion";
 
                     }
                     else if (GameManager.instance.count == 2 && !creatingPotion)
@@ -151,7 +151,22 @@ public class RaycastManager : MonoBehaviour
                 }
 
             }
-          
+
+            //.....................Texts........................
+            else if (hit.collider.CompareTag("Text"))
+            {
+                CrosshairActive();
+                raycastedObj = hit.collider.gameObject;
+                itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
+
+                if (Input.GetMouseButtonDown(0))
+                {
+                    raycastedObj.GetComponent<ItemProperties>().Interaction();
+
+                }
+
+            }
+
         }
         // ......................Nothing.....................
         else
