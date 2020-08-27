@@ -12,12 +12,15 @@ public class PlayerMovement : MonoBehaviour
     public float floatSpeed = -3f;
     public float jumpHeight = 3f;
     public bool playerLocked;
+  
 
     public Transform groundCheck;
     public float groundDistance = 0.5f;
     public LayerMask groundMask;
 
     bool isGrounded;
+    string horizontal = "Horizontal";
+    string vertical = "Vertical";
     Vector3 velocity;
 
     private void Awake()
@@ -37,10 +40,18 @@ public class PlayerMovement : MonoBehaviour
         if(isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
-        } 
+        }
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+       
+        float x = Input.GetAxis(horizontal);
+        float z = Input.GetAxis(vertical);
+        
+        //else
+        //{
+        //    float x = Input.GetAxis("Vertical");
+        //    float z = Input.GetAxis("Horizontal");
+        //}
+        
 
         Vector3 move = transform.right * x + transform.forward * z;
 
@@ -66,6 +77,19 @@ public class PlayerMovement : MonoBehaviour
     public void Fall()
     {
         gravity = -9.81f;
+    }
+
+    public void Reverse()
+    {
+        horizontal = "Vertical";
+        vertical = "Horizontal";
+        //
+    }
+
+    public void Normal()
+    {
+        horizontal = "Horizontal";
+        vertical = "Vertical";
     }
 
 }
