@@ -73,6 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: AlchemyFmod/Build/Desktop/Master.strings.bank
   SubDir: 
+
   lastModified: 637340872500000000
   LoadResult: 0
   FileSizes:
@@ -111,11 +112,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -1622390575955182654}
+
   - {fileID: 7963772347508745583}
   EditorEvents:
   - {fileID: 2010582694038107948}
   EditorParameters: []
   MasterBanks:
+
   - {fileID: 7963772347508745583}
   StringsBanks:
   - {fileID: -1622390575955182654}
@@ -190,6 +193,7 @@ MonoBehaviour:
   Path: event:/Sound Potion/Sonar
   guid: 0fe2643b5187a042bbdffa7be3064d63
   Banks:
+
   - {fileID: 7963772347508745583}
   IsStream: 1
   Is3D: 1
@@ -236,6 +240,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 744
   Exists: 1
+
 --- !u!114 &7963772347508745583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,6 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: AlchemyFmod/Build/Desktop/Master.bank
   SubDir: 
+
   lastModified: 637340872500000000
   LoadResult: 0
   FileSizes: []
