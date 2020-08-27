@@ -1,0 +1,266 @@
+[LOG] System::create                           : Header version = 2.00.10. Current version = 2.00.10.
+[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0x0.
+[LOG] SystemI::init                            : Initialize version=20010 (110198), maxchannels=256, flags=0x00020000
+[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD Core Audio Output'
+[LOG] OutputCoreAudio::init                    : Output running 2 channels at 44100Hz sample rate.
+[LOG] OutputCoreAudio::init                    : Maximum hardware read size: 1024 samples, Software buffer size: 512 samples, Number of software buffers: 4.
+[WRN] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
+[LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 0x7ff5a2eecc08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : done
+[LOG] PlaybackSystem::init                     : 
+[LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] PlaybackSystem::init                     : done
+[LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Thread::initThread                       : Init FMOD profiler thread (recv). Priority: 0, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] Thread::initThread                       : Init FMOD profiler thread (send). Priority: 0, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] LiveUpdate::clientConnected              : client = 0x7ff5922e7808
+[LOG] LiveUpdate::readPacket                   : Recieved init packet from client 0x7ff5922e7808
+[LOG] LiveUpdate::readPacket                   : Accepting init message for client 0x7ff5922e7808
+[LOG] LiveUpdate::transitionToConnected        : 
+[LOG] Manager::sendConnectTimeHash             : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::acceptInitPacket             : Client 0x7ff5922e7808 connected, entering connected state
+[LOG] SystemI::createSound                     : filename = ../../FMOD/Alchemy/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 0x7ff52386dfd8 : node = 0x7ff52386e190
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7ff52386e408.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7ff52386dfd8
+[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD/Alchemy/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 132128
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7ff52386e2a0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Music, Tuned Gong, Tone, Hit, G SND45839', format=2, channels=2, frequency=48000, lengthbytes=131872, lengthpcm=587512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.746110.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 49152, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7ff52386dfd8
+[LOG] SoundI::getSubSound                      : sound 0x7ff52386dfd8.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = ../../FMOD/Alchemy/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7ff5247361b8 : node = 0x7ff524733340
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7ff52386e408.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7ff5247361b8
+[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD/Alchemy/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 132128
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7ff524733450
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Music, Tuned Gong, Tone, Hit, G SND45839', format=2, channels=2, frequency=48000, lengthbytes=131872, lengthpcm=587512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.746110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7ff5247361b8
+[LOG] SoundI::getSubSound                      : sound 0x7ff5247361b8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff52386dfd8)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5245808e8)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff524588178)
+[LOG] SystemI::createSound                     : filename = ../../FMOD/Alchemy/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7ff523e88a78 : node = 0x7ff523e603a0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7ff52386e408.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7ff523e88a78
+[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD/Alchemy/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 132128
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7ff523e604b0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Music, Tuned Gong, Tone, Hit, G SND45839', format=2, channels=2, frequency=48000, lengthbytes=131872, lengthpcm=587512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.746110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7ff523e88a78
+[LOG] SoundI::getSubSound                      : sound 0x7ff523e88a78.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5247361b8)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff524583f98)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff524584128)
+[LOG] SystemI::createSound                     : filename = ../../FMOD/Alchemy/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7ff525764ce8 : node = 0x7ff525222e10
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7ff52386e408.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7ff525764ce8
+[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD/Alchemy/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 132128
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7ff525222f20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Music, Tuned Gong, Tone, Hit, G SND45839', format=2, channels=2, frequency=48000, lengthbytes=131872, lengthpcm=587512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.746110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7ff525764ce8
+[LOG] SoundI::getSubSound                      : sound 0x7ff525764ce8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff523e88a78)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff523e93758)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff523e19d38)
+[LOG] SystemI::createSound                     : filename = ../../FMOD/Alchemy/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7ff5250808f8 : node = 0x7ff525391300
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7ff52386e408.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7ff5250808f8
+[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD/Alchemy/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 132128
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7ff525391410
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Music, Tuned Gong, Tone, Hit, G SND45839', format=2, channels=2, frequency=48000, lengthbytes=131872, lengthpcm=587512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.746110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7ff5250808f8
+[LOG] SoundI::getSubSound                      : sound 0x7ff5250808f8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff525764ce8)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff523e64418)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff523e128b8)
+[LOG] SystemI::createSound                     : filename = ../../FMOD/Alchemy/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7ff5252f7458 : node = 0x7ff5252f7610
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7ff52386e408.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7ff5252f7458
+[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD/Alchemy/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 132128
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7ff5252f7720
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Music, Tuned Gong, Tone, Hit, G SND45839', format=2, channels=2, frequency=48000, lengthbytes=131872, lengthpcm=587512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.746110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7ff5252f7458
+[LOG] SoundI::getSubSound                      : sound 0x7ff5252f7458.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5250808f8)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5240925c8)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff525766e48)
+[LOG] SystemI::createSound                     : filename = ../../FMOD/Alchemy/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7ff5255dac28 : node = 0x7ff5255dade0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7ff52386e408.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7ff5255dac28
+[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD/Alchemy/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 132128
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7ff5255daef0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Music, Tuned Gong, Tone, Hit, G SND45839', format=2, channels=2, frequency=48000, lengthbytes=131872, lengthpcm=587512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.746110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7ff5255dac28
+[LOG] SoundI::getSubSound                      : sound 0x7ff5255dac28.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5252f7458)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff523e64418)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff523e128b8)
+[LOG] SystemI::createSound                     : filename = ../../FMOD/Alchemy/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7ff525766e48 : node = 0x7ff5250443b0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7ff52386e408.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7ff525766e48
+[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD/Alchemy/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 132128
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7ff5250444c0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Music, Tuned Gong, Tone, Hit, G SND45839', format=2, channels=2, frequency=48000, lengthbytes=131872, lengthpcm=587512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.746110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7ff525766e48
+[LOG] SoundI::getSubSound                      : sound 0x7ff525766e48.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5255dac28)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff524734c08)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff524733c78)
+[LOG] SystemI::createSound                     : filename = ../../FMOD/Alchemy/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7ff524578808 : node = 0x7ff5245784e0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7ff52386e408.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7ff524578808
+[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD/Alchemy/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 132128
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7ff5245785f0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Music, Tuned Gong, Tone, Hit, G SND45839', format=2, channels=2, frequency=48000, lengthbytes=131872, lengthpcm=587512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.746110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7ff524578808
+[LOG] SoundI::getSubSound                      : sound 0x7ff524578808.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff525766e48)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5247334d8)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff524733668)
+[LOG] SystemI::createSound                     : filename = ../../FMOD/Alchemy/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7ff524575908 : node = 0x7ff524578620
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7ff52386e408.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7ff524575908
+[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD/Alchemy/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 132128
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7ff524578730
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Music, Tuned Gong, Tone, Hit, G SND45839', format=2, channels=2, frequency=48000, lengthbytes=131872, lengthpcm=587512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.746110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7ff524575908
+[LOG] SoundI::getSubSound                      : sound 0x7ff524575908.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff524578808)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5255db318)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5255db578)
+[LOG] SystemI::createSound                     : filename = ../../FMOD/Alchemy/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7ff5250808f8 : node = 0x7ff5250443b0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7ff52386e408.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7ff5250808f8
+[LOG] SystemI::createSoundInternal             :     Create name='../../FMOD/Alchemy/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 132128
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 2400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7ff5250444c0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Music, Tuned Gong, Tone, Hit, G SND45839', format=2, channels=2, frequency=48000, lengthbytes=131872, lengthpcm=587512, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.746110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7ff5250808f8
+[LOG] SoundI::getSubSound                      : sound 0x7ff5250808f8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff524575908)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5255d0ae8)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5255d0c78)
+[LOG] SoundI::release                          : Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5250808f8)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff5247375a8)
+[LOG] SoundI::release                          :     Music, Tuned Gong, Tone, Hit, G SND45839 (0x7ff524739348)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] ProfileClient::markForDead               : Closing client connection
+[ERR] FMOD_OS_Net_Read                         : read failed with errno 9
+[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[ERR] ProfileClient::recvThreadLoopFunction    : Recv thread loop returned 43
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.

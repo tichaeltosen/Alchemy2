@@ -41,9 +41,9 @@ public class RaycastManager : MonoBehaviour
     {
         if (!PotionEventManager.instance.potionEquipped)
         {
+            isPotionObject = false;
             CrosshairNormal();
             PotionDisabled();
-            isPotionObject = false;
         }
         else if (PotionEventManager.instance.potionEquipped)
         {
@@ -61,7 +61,7 @@ public class RaycastManager : MonoBehaviour
         {
             //.............Select Element...................
 
-            if (hit.collider.CompareTag("Element") && GameManager.instance.count < 2)
+            if (hit.collider.CompareTag("Element"))
             {
                 raycastedObj = hit.collider.gameObject;
                 IElement RackStatus = raycastedObj.GetComponent<IElement>();
@@ -78,7 +78,7 @@ public class RaycastManager : MonoBehaviour
                         raycastedObj.GetComponent<ItemProperties>().Interaction();
 
                     }
-                }else if (rStatus)
+                }else if (rStatus && GameManager.instance.count < 2)
                 {
                     CrosshairActive();
                     itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
