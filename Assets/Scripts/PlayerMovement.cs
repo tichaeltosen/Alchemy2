@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance;
     public CharacterController controller;
 
     public float speed = 12f;
     public float gravity = -9.81f;
     public float floatSpeed = -3f;
     public float jumpHeight = 3f;
+    public bool playerLocked;
 
     public Transform groundCheck;
     public float groundDistance = 0.5f;
@@ -17,6 +19,12 @@ public class PlayerMovement : MonoBehaviour
 
     bool isGrounded;
     Vector3 velocity;
+
+    private void Awake()
+    {
+        instance = this;
+       
+    }
 
 
     // Update is called once per frame
@@ -36,9 +44,13 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
 
-        controller.Move(move * speed * Time.deltaTime);
+        if (!playerLocked)
+        {
+            controller.Move(move * speed * Time.deltaTime);
 
-        
+        }
+
+
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
