@@ -49,9 +49,17 @@ public class CraftRecipe : MonoBehaviour
                 return potion;
 
             }
+            else
+            {
+                RaycastManager.instance.itemNameText.text = "These Ingredients Do Not Work Together!";
+
+                return "None";
+
+            }
 
         }
         return "None";
+
 
     }
 

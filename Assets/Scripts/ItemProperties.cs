@@ -12,6 +12,8 @@ public class ItemProperties : MonoBehaviour
     public string itemName;
     [Header("Element Variant")]
     public GameObject chosenElement;
+    [Header("Choose Text")]
+    public GameObject textChoice;
     [Header("Variant Positions")]
     public GameObject potionTable1;
     public GameObject potionTable2;
@@ -27,6 +29,8 @@ public class ItemProperties : MonoBehaviour
     private bool endPotion;
     [SerializeField]
     private bool chest;
+    [SerializeField]
+    private bool text;
 
     private string potion;
     private bool rStatus;
@@ -138,6 +142,12 @@ public class ItemProperties : MonoBehaviour
         else if(chest && !lStatus)
         {
             gameObject.GetComponent<OpenChest>().Open();
+
+        }
+        else if (text)
+        {
+            textChoice.SetActive(true);
+            GameManager.instance.textState = true;
         }
 
     }

@@ -10,21 +10,52 @@ public class GameManager : MonoBehaviour
     public bool sulfurState;
     public bool circleStatus;
     public bool gameOver;
+    public bool textState;
+
+    GameObject killNotes;
 
     private void Awake()
     {
         instance = this;
     }
-    // Start is called before the first frame update
-    void Start()
+
+    private void Update()
     {
-
-
+        StartCoroutine(EnableClick());
+        
     }
 
     public void EndGame()
     {
         SceneManager.LoadScene("GameOver");
+       
+    }
+
+    private IEnumerator EnableClick()
+    {
+        if (textState)
+        {
+
+            PlayerMovement.instance.playerLocked = true;
+            MouseLook.instance.mouseLocked = true;
+            yield return new WaitForSeconds(0.05f);
+         
+            if (Input.GetMouseButtonDown(0))
+            {
+                killNotes = GameObject.FindGameObjectWithTag("Notes");
+                if(killNotes != null)
+                {
+                    killNotes.SetActive(false);
+
+                }
+
+                textState = false;
+                PlayerMovement.instance.playerLocked = false;
+                MouseLook.instance.mouseLocked = false;
+                
+            }
+        }
+        
     }
 
 
