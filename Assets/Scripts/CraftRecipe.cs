@@ -23,9 +23,11 @@ public class CraftRecipe : MonoBehaviour
         recipes.Add(new Recipes("Strength", new List<string>() { "Iron", "Salt" }));
         recipes.Add(new Recipes("Fertility", new List<string>() { "Copper", "Iron" }));
         recipes.Add(new Recipes("Shrinking", new List<string>() { "Copper", "Tin" }));
-        recipes.Add(new Recipes("Electric", new List<string>() { "Silver", "Lead" }));
+        recipes.Add(new Recipes("Electric", new List<string>() { "Tin", "Lead" }));
         recipes.Add(new Recipes("Heavy", new List<string>() { "Mercury", "Lead" }));
         recipes.Add(new Recipes("Sound", new List<string>() { "Salt", "Gold" }));
+        recipes.Add(new Recipes("Iron Wine", new List<string>() { "Iron", "Iron" }));
+
 
 
     }

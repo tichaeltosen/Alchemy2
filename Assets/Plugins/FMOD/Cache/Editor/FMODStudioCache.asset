@@ -73,7 +73,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: AlchemyFmod/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637341155950000000
+
+  lastModified: 637340872500000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -111,15 +112,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -1622390575955182654}
-  - {fileID: 8529911829634026824}
+
+  - {fileID: 7963772347508745583}
   EditorEvents:
   - {fileID: 2010582694038107948}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8529911829634026824}
+
+  - {fileID: 7963772347508745583}
   StringsBanks:
   - {fileID: -1622390575955182654}
-  stringsBankWriteTime: 637341155950000000
+  stringsBankWriteTime: 637340872500000000
   cacheVersion: 3
 --- !u!114 &108640769990416042
 MonoBehaviour:
@@ -190,7 +193,8 @@ MonoBehaviour:
   Path: event:/Sound Potion/Sonar
   guid: 0fe2643b5187a042bbdffa7be3064d63
   Banks:
-  - {fileID: 8529911829634026824}
+
+  - {fileID: 7963772347508745583}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -236,7 +240,8 @@ MonoBehaviour:
   - Name: Desktop
     Value: 744
   Exists: 1
---- !u!114 &8529911829634026824
+
+--- !u!114 &7963772347508745583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -250,7 +255,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: AlchemyFmod/Build/Desktop/Master.bank
   SubDir: 
-  lastModified: 637341155950000000
+
+  lastModified: 637340872500000000
   LoadResult: 0
   FileSizes: []
   Exists: 1

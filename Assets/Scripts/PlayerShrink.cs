@@ -9,7 +9,7 @@ public class PlayerShrink : MonoBehaviour
     public CharacterController cControl;
     public float fadeTime = 2f;
     public float lerpNumber = 0f;
-    public float shrinkHeight = 2f;
+    public float shrinkHeight = 0.1f;
 
     private float startingHeight;
     private float effectTime;
