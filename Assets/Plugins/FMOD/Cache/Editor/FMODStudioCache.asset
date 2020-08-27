@@ -73,7 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: AlchemyFmod/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637340857080000000
+  lastModified: 637341136650000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -111,16 +111,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -1622390575955182654}
-  - {fileID: 5168976743994448781}
+  - {fileID: 108640769990416042}
   EditorEvents:
   - {fileID: 2010582694038107948}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5168976743994448781}
+  - {fileID: 108640769990416042}
   StringsBanks:
   - {fileID: -1622390575955182654}
-  stringsBankWriteTime: 637340857080000000
+  stringsBankWriteTime: 637341136650000000
   cacheVersion: 3
+--- !u!114 &108640769990416042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637341136650000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &1044279922044067632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +190,7 @@ MonoBehaviour:
   Path: event:/Sound Potion/Sonar
   guid: 0fe2643b5187a042bbdffa7be3064d63
   Banks:
-  - {fileID: 5168976743994448781}
+  - {fileID: 108640769990416042}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -197,7 +215,7 @@ MonoBehaviour:
   lastModified: 637340857080000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &6815553364025778564
 MonoBehaviour:
   m_ObjectHideFlags: 0
