@@ -59,6 +59,26 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-1622390575955182654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637340857080000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 744
+  Exists: 1
 --- !u!114 &-1236140254826671596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,16 +110,16 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 6815553364025778564}
-  - {fileID: -2794472737634924203}
+  - {fileID: -1622390575955182654}
+  - {fileID: 5168976743994448781}
   EditorEvents:
-  - {fileID: -4359816579802068554}
+  - {fileID: 2010582694038107948}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -2794472737634924203}
+  - {fileID: 5168976743994448781}
   StringsBanks:
-  - {fileID: 6815553364025778564}
-  stringsBankWriteTime: 637340769870000000
+  - {fileID: -1622390575955182654}
+  stringsBankWriteTime: 637340857080000000
   cacheVersion: 3
 --- !u!114 &1044279922044067632
 MonoBehaviour:
@@ -137,6 +157,47 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &2010582694038107948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Potion/Sonar
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Potion/Sonar
+  guid: 0fe2643b5187a042bbdffa7be3064d63
+  Banks:
+  - {fileID: 5168976743994448781}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 150
+  Length: 5500
+--- !u!114 &5168976743994448781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637340857080000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &6815553364025778564
 MonoBehaviour:
   m_ObjectHideFlags: 0
