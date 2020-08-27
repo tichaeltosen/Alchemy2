@@ -83,6 +83,7 @@ public class ItemProperties : MonoBehaviour
             {
                 //
                 GameManager.instance.sulfurState = true;
+                EndState.instance.ShowThird();
             }
 
             //break potion spell if active when new element found
