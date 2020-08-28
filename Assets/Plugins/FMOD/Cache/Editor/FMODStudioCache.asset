@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/Sound Potion/Sonar
   guid: 0fe2643b5187a042bbdffa7be3064d63
   Banks:
-  - {fileID: -4541697162833095771}
+  - {fileID: 6910516634665645012}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -96,15 +96,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 3622963958170582510}
-  - {fileID: -4541697162833095771}
+  - {fileID: 6910516634665645012}
   EditorEvents:
   - {fileID: -7807721480956651065}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -4541697162833095771}
+  - {fileID: 6910516634665645012}
   StringsBanks:
   - {fileID: 3622963958170582510}
-  stringsBankWriteTime: 637340872500000000
+  stringsBankWriteTime: 637341136650000000
   cacheVersion: 3
 --- !u!114 &2447092684069527453
 MonoBehaviour:
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: AlchemyFmod/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637340872500000000
+  lastModified: 637341136650000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -187,6 +187,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 150
   Length: 5500
+--- !u!114 &6910516634665645012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637341136650000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &7245502613528320005
 MonoBehaviour:
   m_ObjectHideFlags: 0
