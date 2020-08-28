@@ -5,7 +5,7 @@ using UnityEngine;
 public class InstantiatePotion : MonoBehaviour
 {
     public GameObject getPotion;
-    public GameObject sun, moon, feather, strength, fertility, shrinking, electric, heavy, sound, wine;
+    public GameObject sun, moon, feather, strength, fertility, shrinking, electric, heavy, sound, wine, particleEffect;
     public Transform player;
     public float distance = 2f;
 
@@ -91,6 +91,8 @@ public class InstantiatePotion : MonoBehaviour
     {
         GameObject newObj = Instantiate(name, player.position + player.transform.forward * distance, player.rotation, player);
         newObj.gameObject.AddComponent<UsePotion>();
+        GameObject particle = Instantiate(particleEffect, player.position + player.transform.forward * distance, particleEffect.transform.rotation, player);
+        Destroy(particle, 1.0f);
     }
 
 

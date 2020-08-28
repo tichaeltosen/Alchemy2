@@ -15,7 +15,7 @@ public class UsePotion : MonoBehaviour
             if(Effect != null)
             {
                 Effect();
-
+                PotEndParticle.instance.PotionParticle();
             }
             Destroy(gameObject);
 

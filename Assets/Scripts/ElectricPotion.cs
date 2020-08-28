@@ -38,6 +38,7 @@ public class ElectricPotion : MonoBehaviour
         PotionEffects.instance.time = 0;
         PotionEffects.instance.potionEffectActive = true;
         chestStatus.isLocked = false;
+        PartElectric.instance.ElectricParticle();
 
         while (PotionEffects.instance.time != effectTime)
         {
