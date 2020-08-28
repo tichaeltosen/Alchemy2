@@ -43,6 +43,7 @@ public class FertEnd : MonoBehaviour
             {
                 //Trigger the Light Ending
                 ExitDoor.instance.LightExit();
+                PartLightEnd.instance.LightEndParticle();
 
             }
             if (PotionEffects.instance.breakRoutine || PotionEffects.instance.time == effectTime)
