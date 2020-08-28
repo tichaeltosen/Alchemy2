@@ -81,7 +81,7 @@ public class InstantiatePotion : MonoBehaviour
                 break;
 
             case "None":
-                //do something for default no potion
+                Smoke.instance.SmokeParticle();
                 break;
         }
 
