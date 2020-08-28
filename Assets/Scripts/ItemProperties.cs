@@ -143,7 +143,9 @@ public class ItemProperties : MonoBehaviour
 
         else if(chest && !lStatus)
         {
-            gameObject.GetComponent<OpenChest>().Open();
+            gameObject.GetComponentInParent<OpenChest>().Open();
+            //PotionEffects.instance.potionEffectActive = false;
+
 
         }
         else if (text)

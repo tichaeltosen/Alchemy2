@@ -12,6 +12,7 @@ public class UsePotion : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             PotionEventManager.instance.potionEquipped = false;
+            PotionEffects.instance.breakRoutine = false;
             if(Effect != null)
             {
                 Effect();
