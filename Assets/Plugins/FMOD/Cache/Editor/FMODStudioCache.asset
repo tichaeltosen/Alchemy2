@@ -16,7 +16,7 @@ MonoBehaviour:
   guid: 0fe2643b5187a042bbdffa7be3064d63
   Banks:
   - {fileID: 6872852152928425475}
-  - {fileID: -4235116893400267982}
+  - {fileID: 5110528764341439179}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
   guid: 242b8d8eabe47c44b3196195d390cc82
   Banks:
   - {fileID: 6872852152928425475}
-  - {fileID: -4235116893400267982}
+  - {fileID: 5110528764341439179}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -157,16 +157,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 3622963958170582510}
-  - {fileID: -4235116893400267982}
+  - {fileID: 5110528764341439179}
   EditorEvents:
   - {fileID: -7807721480956651065}
   - {fileID: -6500544422131673312}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -4235116893400267982}
+  - {fileID: 5110528764341439179}
   StringsBanks:
   - {fileID: 3622963958170582510}
-  stringsBankWriteTime: 637342473570000000
+  stringsBankWriteTime: 637342893410000000
   cacheVersion: 3
 --- !u!114 &479078057783852725
 MonoBehaviour:
@@ -292,11 +292,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: AlchemyFmod/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637342473570000000
+  lastModified: 637342893410000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 802
+  Exists: 1
+--- !u!114 &5110528764341439179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637342893410000000
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &6623375277606786098
 MonoBehaviour:
