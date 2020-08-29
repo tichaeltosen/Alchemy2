@@ -27,6 +27,10 @@ public class CraftRecipe : MonoBehaviour
         recipes.Add(new Recipes("Heavy", new List<string>() { "Mercury", "Lead" }));
         recipes.Add(new Recipes("Fire", new List<string>() { "Salt", "Gold" }));
         recipes.Add(new Recipes("Ironwine", new List<string>() { "Iron", "Iron" }));
+        recipes.Add(new Recipes("Duality", new List<string>() { "Gold", "Silver" }));
+       // recipes.Add(new Recipes("Duality", new List<string>() { "Lead", "Tin" }));
+
+
 
 
 

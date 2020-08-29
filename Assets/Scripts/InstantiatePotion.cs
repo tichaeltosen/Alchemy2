@@ -70,17 +70,25 @@ public class InstantiatePotion : MonoBehaviour
                 UsePotion.Effect += PlayerSlow.instance.Slow;
                 break;
 
-            case "Sound":
+            case "Fire":
                 InstPotion(sound);
                 UsePotion.Effect += SoundPotion.instance.SoundPo;
                 break;
 
-            case "Iron Wine":
+            case "Ironwine":
                 InstPotion(wine);
                 UsePotion.Effect += PlayerReverse.instance.ReversePlayer;
                 UsePotion.Effect += DrunkEnd.instance.DrunkEnding;
 
                 break;
+
+            case "Duality":
+                InstPotion(fertility);
+                UsePotion.Effect += PotionEffects.instance.Fertility;
+                UsePotion.Effect += FertEnd.instance.LightEnd;
+
+                break;
+
 
             case "None":
                 Smoke.instance.SmokeParticle();

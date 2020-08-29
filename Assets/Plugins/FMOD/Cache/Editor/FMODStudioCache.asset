@@ -17,7 +17,8 @@ MonoBehaviour:
   Banks:
   - {fileID: 6872852152928425475}
   - {fileID: -1966209128278059773}
-  - {fileID: 4583939728399409313}
+  - {fileID: -5472569314817651486}
+  - {fileID: -3646819919412477985}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -60,7 +61,8 @@ MonoBehaviour:
   Banks:
   - {fileID: 6872852152928425475}
   - {fileID: -1966209128278059773}
-  - {fileID: 4583939728399409313}
+  - {fileID: -5472569314817651486}
+  - {fileID: -3646819919412477985}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -91,6 +93,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 150
   Length: 5500
+--- !u!114 &-5472569314817651486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637342466820000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-4541697162833095771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,6 +144,24 @@ MonoBehaviour:
   Path: AlchemyFmod/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637342473570000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-3646819919412477985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637342466820000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -195,16 +233,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 3622963958170582510}
-  - {fileID: 4583939728399409313}
+  - {fileID: -3646819919412477985}
   EditorEvents:
   - {fileID: -7807721480956651065}
   - {fileID: -6500544422131673312}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4583939728399409313}
+  - {fileID: -3646819919412477985}
   StringsBanks:
   - {fileID: 3622963958170582510}
-  stringsBankWriteTime: 637342893410000000
+  stringsBankWriteTime: 637342466820000000
   cacheVersion: 3
 --- !u!114 &479078057783852725
 MonoBehaviour:
@@ -330,7 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: AlchemyFmod/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637342893410000000
+  lastModified: 637342466820000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
