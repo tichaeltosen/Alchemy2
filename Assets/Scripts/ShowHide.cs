@@ -6,6 +6,7 @@ public class ShowHide : ElementData
 {
     GameObject[] variants;
     //list of elements on potion table
+    [HideInInspector]
     public bool rackStatus;
 
     private void Start()

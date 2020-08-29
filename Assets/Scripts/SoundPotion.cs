@@ -6,6 +6,7 @@ public class SoundPotion : MonoBehaviour
 {
     public static SoundPotion instance;
     public GameObject lead, fire;
+    private bool sRack;
 
     private float effectTime;
 
@@ -46,8 +47,26 @@ public class SoundPotion : MonoBehaviour
             yield return new WaitForSeconds(1);
             if (PotionEffects.instance.breakRoutine || PotionEffects.instance.time == effectTime)
             {
-                lead.SetActive(false);
-                fire.SetActive(false);
+                IElement SoundRack = lead.GetComponent<IElement>();
+                if (lead.GetComponent<IElement>() != null)
+                {
+                    sRack = SoundRack.IsRacked();
+                }
+
+                if (!sRack)
+                {
+                    lead.SetActive(false);
+                    fire.SetActive(false);
+                    Debug.Log("Lead Not Racked");
+
+                }
+                else
+                {
+                    Debug.Log("Lead Racked");
+
+                }
+
+
                 PotionEffects.instance.potionEffectActive = false;
                 PotionEffects.instance.breakRoutine = false;
                 yield break;
