@@ -78,6 +78,8 @@ public class InstantiatePotion : MonoBehaviour
             case "Iron Wine":
                 InstPotion(wine);
                 UsePotion.Effect += PlayerReverse.instance.ReversePlayer;
+                UsePotion.Effect += DrunkEnd.instance.DrunkEnding;
+
                 break;
 
             case "None":
