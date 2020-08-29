@@ -57,14 +57,9 @@ public class SoundPotion : MonoBehaviour
                 {
                     lead.SetActive(false);
                     fire.SetActive(false);
-                    Debug.Log("Lead Not Racked");
 
                 }
-                else
-                {
-                    Debug.Log("Lead Racked");
-
-                }
+                
 
 
                 PotionEffects.instance.potionEffectActive = false;
