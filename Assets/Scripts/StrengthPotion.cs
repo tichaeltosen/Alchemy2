@@ -38,6 +38,8 @@ public class StrengthPotion : MonoBehaviour
         PotionEffects.instance.time = 0;
         PotionEffects.instance.potionEffectActive = true;
         chestStatus.isLocked = false;
+        Debug.Log(gameObject.name + " " + chestStatus.isLocked);
+
 
         while (PotionEffects.instance.time != effectTime)
         {
@@ -45,7 +47,7 @@ public class StrengthPotion : MonoBehaviour
             yield return new WaitForSeconds(1);
             if (PotionEffects.instance.breakRoutine || PotionEffects.instance.time == effectTime)
             {
-
+                Debug.Log("Strength Broken");
                 chestStatus.isLocked = true;
                 PotionEffects.instance.potionEffectActive = false;
                 PotionEffects.instance.breakRoutine = false;
@@ -53,5 +55,13 @@ public class StrengthPotion : MonoBehaviour
             }
         }
 
+    }
+
+    public void ForceOff()
+    {
+        Debug.Log("Strength Broken");
+        chestStatus.isLocked = true;
+        PotionEffects.instance.potionEffectActive = false;
+        PotionEffects.instance.breakRoutine = false;
     }
 }

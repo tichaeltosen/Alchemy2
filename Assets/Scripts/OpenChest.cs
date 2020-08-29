@@ -10,7 +10,6 @@ public class OpenChest : MonoBehaviour
     {
         closed.SetActive(false);
         open.SetActive(true);
-        Debug.Log("Chest Opened!");
     }
 
 }

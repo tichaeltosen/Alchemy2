@@ -47,7 +47,7 @@ public class ItemProperties : MonoBehaviour
     {
 
         IElement RackStatus = gameObject.GetComponent<IElement>();
-        IChest LockedStatus = gameObject.GetComponent<IChest>();
+        IChest LockedStatus = gameObject.GetComponentInParent<IChest>();
 
         if (gameObject.GetComponent<IElement>() != null)
         {
@@ -55,7 +55,7 @@ public class ItemProperties : MonoBehaviour
 
         }
 
-        if (gameObject.GetComponent<IChest>() != null)
+        if (gameObject.GetComponentInParent<IChest>() != null)
         {
             lStatus = LockedStatus.IsLocked();
 
@@ -143,7 +143,9 @@ public class ItemProperties : MonoBehaviour
 
         else if(chest && !lStatus)
         {
-            gameObject.GetComponent<OpenChest>().Open();
+            gameObject.GetComponentInParent<OpenChest>().Open();
+            //PotionEffects.instance.potionEffectActive = false;
+
 
         }
         else if (text)

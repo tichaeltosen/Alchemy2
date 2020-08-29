@@ -17,7 +17,7 @@ public class Smoke : MonoBehaviour
 
     public void SmokeParticle()
     {
-        GameObject smoke = Instantiate(particle, player.position + player.transform.forward * distance, particle.transform.rotation, player);
+        GameObject smoke = Instantiate(particle, player.position + player.transform.forward * distance, particle.transform.rotation);
         Destroy(smoke, smokeTime);
 
     }
