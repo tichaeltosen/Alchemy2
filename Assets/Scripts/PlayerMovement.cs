@@ -46,30 +46,21 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
-        Debug.Log(controller.velocity.magnitude);
         if(controller.velocity.magnitude > 0f && isGrounded)
         {
             timer += Time.deltaTime;
             if (timer > footStepSpeed)
             {
-                 FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Footsteps", GetComponent<Transform>().position);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Footsteps", GetComponent<Transform>().position);
                 timer = 0f;
 
             }
         }
 
 
-
-       
         float x = Input.GetAxis(horizontal);
         float z = Input.GetAxis(vertical);
-        
-        //else
-        //{
-        //    float x = Input.GetAxis("Vertical");
-        //    float z = Input.GetAxis("Horizontal");
-        //}
-        
+       
 
         Vector3 move = transform.right * x + transform.forward * z;
 
