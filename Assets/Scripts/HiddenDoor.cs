@@ -5,6 +5,7 @@ using UnityEngine;
 public class HiddenDoor : MonoBehaviour
 {
     public GameObject wall, door;
+    public OcclusionPortal myPortal;
 
     public static HiddenDoor instance;
 
@@ -18,6 +19,8 @@ public class HiddenDoor : MonoBehaviour
         Debug.Log("Hidden Door Revealed");
         wall.SetActive(false);
         door.SetActive(true);
+        myPortal.open = true;
+
         UsePotion.Effect -= ShowDoor;
 
     }
