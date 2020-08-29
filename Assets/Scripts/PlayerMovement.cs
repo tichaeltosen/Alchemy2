@@ -6,12 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
     public static PlayerMovement instance;
     public CharacterController controller;
+    FMOD.Studio.EventInstance PlayFootSteps;
 
     public float speed = 12f;
     public float gravity = -9.81f;
     public float floatSpeed = -3f;
     public float jumpHeight = 3f;
     public bool playerLocked;
+    public float footStepSpeed = 1f;
   
 
     public Transform groundCheck;
@@ -21,11 +23,14 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
     string horizontal = "Horizontal";
     string vertical = "Vertical";
+    float timer;
+
     Vector3 velocity;
 
     private void Awake()
     {
         instance = this;
+       // PlayFootSteps = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps");
        
     }
 
@@ -41,6 +46,19 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
+        Debug.Log(controller.velocity.magnitude);
+        if(controller.velocity.magnitude > 0f && isGrounded)
+        {
+            timer += Time.deltaTime;
+            if (timer > footStepSpeed)
+            {
+                 FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Footsteps", GetComponent<Transform>().position);
+                timer = 0f;
+
+            }
+        }
+
+
 
        
         float x = Input.GetAxis(horizontal);
@@ -90,6 +108,14 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = "Horizontal";
         vertical = "Vertical";
+    }
+
+    private IEnumerator Walking()
+    {
+        // FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Footsteps", GetComponent<Transform>().position);
+        yield return new WaitForSeconds(3);
+        Debug.Log("Walking");
+
     }
 
 }
