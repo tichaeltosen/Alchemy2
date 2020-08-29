@@ -76,9 +76,12 @@ public class RaycastManager : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         raycastedObj.GetComponent<ItemProperties>().Interaction();
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Element");
+
 
                     }
-                }else if (rStatus && GameManager.instance.count < 2)
+                }
+                else if (rStatus && GameManager.instance.count < 2)
                 {
                     CrosshairActive();
                     itemNameText.text = raycastedObj.GetComponent<ItemProperties>().itemName;
@@ -86,6 +89,9 @@ public class RaycastManager : MonoBehaviour
                     {
 
                         raycastedObj.GetComponent<ItemProperties>().Interaction();
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Element");
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Element-Table");
+
                         // add to list of chosen elements
                         chosenElements.Add(raycastedObj.name);
                         Debug.Log("Chosen Element is : " + raycastedObj.name);

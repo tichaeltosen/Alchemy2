@@ -134,7 +134,8 @@ public class ItemProperties : MonoBehaviour
             {
                 gameObject.GetComponent<OpenChest>().Open();
 
-            }else if(itemName == "Electric Chest")
+            }
+            else if(itemName == "Electric Chest")
             {
                 RaycastManager.instance.itemNameText.text = "The chest seems to require energy of some sort...";
 

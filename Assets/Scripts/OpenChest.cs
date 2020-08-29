@@ -10,6 +10,8 @@ public class OpenChest : MonoBehaviour
     {
         closed.SetActive(false);
         open.SetActive(true);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Chest", GetComponent<Transform>().position);
+
     }
 
 }

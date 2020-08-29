@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7910084244709531980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637343141320000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-7807721480956651065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18,7 +36,7 @@ MonoBehaviour:
   - {fileID: 6872852152928425475}
   - {fileID: -1966209128278059773}
   - {fileID: -5472569314817651486}
-  - {fileID: -3646819919412477985}
+  - {fileID: 6459309348675707378}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -62,7 +80,7 @@ MonoBehaviour:
   - {fileID: 6872852152928425475}
   - {fileID: -1966209128278059773}
   - {fileID: -5472569314817651486}
-  - {fileID: -3646819919412477985}
+  - {fileID: 6459309348675707378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -147,6 +165,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-4157726349905662441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable/Chest
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable/Chest
+  guid: 434e6c30b2da3d49a58d3c6a58d8255d
+  Banks:
+  - {fileID: 6459309348675707378}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 421
 --- !u!114 &-3646819919412477985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +205,7 @@ MonoBehaviour:
   lastModified: 637342466820000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3289227675919641148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,16 +274,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 3622963958170582510}
-  - {fileID: -3646819919412477985}
+  - {fileID: 6459309348675707378}
   EditorEvents:
   - {fileID: -7807721480956651065}
   - {fileID: -6500544422131673312}
+  - {fileID: -4157726349905662441}
+  - {fileID: 5952353506204933909}
+  - {fileID: 2177546828634831891}
+  - {fileID: 6859897216536452305}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -3646819919412477985}
+  - {fileID: 6459309348675707378}
   StringsBanks:
   - {fileID: 3622963958170582510}
-  stringsBankWriteTime: 637342466820000000
+  stringsBankWriteTime: 637343150260000000
   cacheVersion: 3
 --- !u!114 &479078057783852725
 MonoBehaviour:
@@ -316,6 +361,65 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &1799465027530729879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637343133450000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &2177546828634831891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable/Element
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable/Element
+  guid: 847cd43874f8af46ae98cc98adbe1194
+  Banks:
+  - {fileID: 6459309348675707378}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &2363677369343044638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637343145630000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &2447092684069527453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,12 +472,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: AlchemyFmod/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637342466820000000
+  lastModified: 637343150260000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 802
+    Value: 992
   Exists: 1
+--- !u!114 &4572538219462283307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637343138730000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &4583939728399409313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,6 +514,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &4712547463688189206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637343142050000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &5110528764341439179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +550,47 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &5952353506204933909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable/Secret Door
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable/Secret Door
+  guid: 1303941096577842a53e7e2a11f0c9f1
+  Banks:
+  - {fileID: 6459309348675707378}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 850
+  Length: 4120
+--- !u!114 &6459309348675707378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637343150260000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &6623375277606786098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,6 +614,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 150
   Length: 5500
+--- !u!114 &6859897216536452305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactable/Element-Table
+  m_EditorClassIdentifier: 
+  Path: event:/Interactable/Element-Table
+  guid: 3b33b2ad6f26fe4d99b1dc025ff31569
+  Banks:
+  - {fileID: 6459309348675707378}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2250
 --- !u!114 &6872852152928425475
 MonoBehaviour:
   m_ObjectHideFlags: 0
