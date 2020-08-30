@@ -57,7 +57,6 @@ public class SoundPotion : MonoBehaviour
                 {
                     lead.SetActive(false);
                     fire.SetActive(false);
-
                 }
                 
 
