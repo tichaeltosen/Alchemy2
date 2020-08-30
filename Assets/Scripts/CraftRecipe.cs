@@ -27,6 +27,10 @@ public class CraftRecipe : MonoBehaviour
         recipes.Add(new Recipes("Heavy", new List<string>() { "Mercury", "Lead" }));
         recipes.Add(new Recipes("Fire", new List<string>() { "Salt", "Gold" }));
         recipes.Add(new Recipes("Ironwine", new List<string>() { "Iron", "Iron" }));
+        recipes.Add(new Recipes("Duality", new List<string>() { "Gold", "Silver" }));
+       // recipes.Add(new Recipes("Duality", new List<string>() { "Lead", "Tin" }));
+
+
 
 
 
@@ -47,13 +51,13 @@ public class CraftRecipe : MonoBehaviour
             {
                 potion = recipes[i].name;
                 Debug.Log("Potion Created is:  " + potion);
-                RaycastManager.instance.itemNameText.text = "Potion Created is:  " + potion;
+                //RaycastManager.instance.itemNameText.text = "Potion Created is:  " + potion;
                 return potion;
 
             }
            
         }
-        RaycastManager.instance.itemNameText.text = "These Ingredients Do Not Work Together!";
+        //RaycastManager.instance.itemNameText.text = " ";
         return "None";
 
 

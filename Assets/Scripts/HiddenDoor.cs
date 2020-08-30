@@ -20,6 +20,8 @@ public class HiddenDoor : MonoBehaviour
         wall.SetActive(false);
         door.SetActive(true);
         myPortal.open = true;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Secret Door", GetComponent<Transform>().position);
+
 
         UsePotion.Effect -= ShowDoor;
 

@@ -6,13 +6,15 @@ public class PlayerShrink : MonoBehaviour
 {
     public static PlayerShrink instance;
 
-    public CharacterController cControl;
+    public GameObject pHeight;
     public float fadeTime = 2f;
     public float lerpNumber = 0f;
     public float shrinkHeight = 0.1f;
 
-    private float startingHeight;
+
+    private Vector3 startingHeight;
     private float effectTime;
+    Vector3 playerHeight;
 
     private void Awake()
     {
@@ -21,7 +23,7 @@ public class PlayerShrink : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startingHeight = cControl.height;
+        startingHeight = new Vector3(pHeight.transform.localScale.x, pHeight.transform.localScale.y, pHeight.transform.localScale.z);
         effectTime = PotionEffects.instance.effectTime;
     }
 
@@ -42,8 +44,8 @@ public class PlayerShrink : MonoBehaviour
 
         for (float t = 0.01f; t < fadeTime; t += 0.1f)
         {
-            lerpNumber = Mathf.Lerp(startingHeight, shrinkHeight, t / fadeTime);
-            cControl.height = lerpNumber;
+            lerpNumber = Mathf.Lerp(startingHeight.y, shrinkHeight, t / fadeTime);
+            pHeight.transform.localScale = new Vector3(startingHeight.x, lerpNumber, startingHeight.z);
             yield return null;
         }
 
@@ -67,8 +69,8 @@ public class PlayerShrink : MonoBehaviour
     {
         for (float t = 0.01f; t < fadeTime; t += 0.1f)
         {
-            lerpNumber = Mathf.Lerp(shrinkHeight, startingHeight, t / fadeTime);
-            cControl.height = lerpNumber;
+            lerpNumber = Mathf.Lerp(shrinkHeight, startingHeight.y, t / fadeTime);
+            pHeight.transform.localScale = new Vector3(startingHeight.x, lerpNumber, startingHeight.z);
             yield return null;
 
         }

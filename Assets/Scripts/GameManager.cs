@@ -49,6 +49,8 @@ public class GameManager : MonoBehaviour
          
             if (Input.GetMouseButtonDown(0))
             {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Note Down");
+
                 killNotes = GameObject.FindGameObjectWithTag("Notes");
                 if(killNotes != null)
                 {
