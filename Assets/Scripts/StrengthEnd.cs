@@ -44,6 +44,7 @@ public class StrengthEnd : MonoBehaviour
                 //Trigger the Light Ending
                 ExitDoor.instance.DarkExit();
                 PartDark.instance.DarkEndParticle();
+                PotionEffects.instance.StartDarkMusic();
                 yield break;
 
             }

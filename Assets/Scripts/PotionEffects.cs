@@ -35,10 +35,14 @@ public class PotionEffects : MonoBehaviour
     {
         PotionMusic = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
         PotionMusic.start();
+        PotionMusic.setParameterByName("Light", 0f);
+        PotionMusic.setParameterByName("Dark", 0f);
+        PotionMusic.setParameterByName("Ritual", 0f);
+
 
     }
 
-    
+
 
     public void TimeCount()
     {
@@ -121,7 +125,17 @@ public class PotionEffects : MonoBehaviour
     public void StartRitualMusic()
     {
         PotionMusic.setParameterByName("Ritual", 1f);
-        Debug.Log("Starting Ritual Music");
+
+    }
+
+    public void StartDarkMusic()
+    {
+        PotionMusic.setParameterByName("Dark", 1f);
+
+    }
+    public void StartLightMusic()
+    {
+        PotionMusic.setParameterByName("Light", 1f);
 
     }
 
