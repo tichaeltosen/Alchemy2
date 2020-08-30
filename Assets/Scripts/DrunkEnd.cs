@@ -44,6 +44,7 @@ public class DrunkEnd : MonoBehaviour
                 //Trigger the Light Ending
                 ExitDoor.instance.DarkExit();
                 PartDark.instance.DarkEndParticle();
+                yield break;
 
             }
             if (PotionEffects.instance.breakRoutine || PotionEffects.instance.time == effectTime)

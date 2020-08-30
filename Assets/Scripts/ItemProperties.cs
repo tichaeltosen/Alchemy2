@@ -126,6 +126,8 @@ public class ItemProperties : MonoBehaviour
         //...............Chest....................
         else if (chest && lStatus)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Chest Locked");
+
             if (itemName == "Strength Chest")
             {
                 RaycastManager.instance.itemNameText.text = "The lid is stuck. If only you were a little stronger...";

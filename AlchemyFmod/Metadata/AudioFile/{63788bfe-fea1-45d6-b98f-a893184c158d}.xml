@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{63788bfe-fea1-45d6-b98f-a893184c158d}">
+		<property name="assetPath">
+			<value>DarkEnding_BeastlyTransformation_Growl.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>8.586666666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b734c849-b682-419f-8c74-545e527a41bd}</destination>
+		</relationship>
+	</object>
+</objects>
