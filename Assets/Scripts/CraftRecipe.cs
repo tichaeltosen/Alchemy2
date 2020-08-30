@@ -51,13 +51,13 @@ public class CraftRecipe : MonoBehaviour
             {
                 potion = recipes[i].name;
                 Debug.Log("Potion Created is:  " + potion);
-                RaycastManager.instance.itemNameText.text = "Potion Created is:  " + potion;
+                //RaycastManager.instance.itemNameText.text = "Potion Created is:  " + potion;
                 return potion;
 
             }
            
         }
-        RaycastManager.instance.itemNameText.text = "These Ingredients Do Not Work Together!";
+        //RaycastManager.instance.itemNameText.text = " ";
         return "None";
 
 

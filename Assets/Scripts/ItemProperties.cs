@@ -97,6 +97,8 @@ public class ItemProperties : MonoBehaviour
         else if (potionInteractable)
         {
             potion = PotionEventManager.instance.potionReturn;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/Potion Pour");
+
 
             if (itemName == "Quill" && potion == "Heavy")
             {
@@ -107,11 +109,7 @@ public class ItemProperties : MonoBehaviour
                 UsePotion.Effect += HiddenDoor.instance.ShowDoor;
                 UsePotion.Effect += BalanceScale.instance.Balance;
             }
-            else
-            {
-                //trigger default pouring sound and maybe "potion doesn't work on this object
-            }
-
+         
 
         }
 
@@ -120,6 +118,8 @@ public class ItemProperties : MonoBehaviour
             if(PotionEffects.instance.potionEffectActive)
             {
                 PotionEffects.instance.breakRoutine = true;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/Antidote");
+
             }
 
         }
@@ -153,6 +153,8 @@ public class ItemProperties : MonoBehaviour
         {
             textChoice.SetActive(true);
             GameManager.instance.textState = true;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Note Up");
+
         }
 
     }

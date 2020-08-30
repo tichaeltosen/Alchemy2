@@ -10,6 +10,7 @@ public class RaycastManager : MonoBehaviour
     public bool creatingPotion;
     public List<string> chosenElements = new List<string>();
     public bool isPotionObject;
+    public bool potInteractable;
 
 
 
@@ -42,6 +43,7 @@ public class RaycastManager : MonoBehaviour
         if (!PotionEventManager.instance.potionEquipped)
         {
             isPotionObject = false;
+            potInteractable = false;
             CrosshairNormal();
             PotionDisabled();
         }
@@ -61,7 +63,7 @@ public class RaycastManager : MonoBehaviour
         {
             //.............Select Element...................
 
-            if (hit.collider.CompareTag("Element"))
+            if (hit.collider.CompareTag("Element") && !creatingPotion)
             {
                 raycastedObj = hit.collider.gameObject;
                 IElement RackStatus = raycastedObj.GetComponent<IElement>();
@@ -90,7 +92,7 @@ public class RaycastManager : MonoBehaviour
 
                         raycastedObj.GetComponent<ItemProperties>().Interaction();
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Element");
-                        FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Element-Table");
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Element Table");
 
                         // add to list of chosen elements
                         chosenElements.Add(raycastedObj.name);
@@ -198,6 +200,7 @@ public class RaycastManager : MonoBehaviour
 
             if (hit.collider.CompareTag("Potion-Interactable"))
             {
+                potInteractable = true;
                 isPotionObject = true;
                 potionObject = GameObject.FindWithTag("Potion");
                 Renderer[] renderers = potionObject.GetComponentsInChildren<Renderer>();
@@ -217,6 +220,9 @@ public class RaycastManager : MonoBehaviour
                     // do something
                     raycastedObj.GetComponent<ItemProperties>().Interaction();
                 }
+            }else
+            {
+                potInteractable = false;
             }
             
         }

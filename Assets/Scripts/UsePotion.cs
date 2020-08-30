@@ -18,6 +18,10 @@ public class UsePotion : MonoBehaviour
                 Effect();
                 PotEndParticle.instance.PotionParticle();
             }
+            if (!RaycastManager.instance.potInteractable)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/Potion Drink");
+            }
             Destroy(gameObject);
 
 

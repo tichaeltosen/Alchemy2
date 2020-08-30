@@ -39,9 +39,23 @@ public class PotionEventManager : MonoBehaviour
 
         }
 
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/Potion Create");
+        RaycastManager.instance.itemNameText.text = "Mixing the ingredients...";
+
+
         potionReturn = CraftRecipe.instance.CraftedPotion();
-     
-        yield return new WaitForSeconds(1);
+          
+        yield return new WaitForSeconds(2);
+        if (potionReturn != "None")
+        {
+            RaycastManager.instance.itemNameText.text = "Your potion is:  " + CraftRecipe.instance.potion;
+
+        }else
+        {
+            RaycastManager.instance.itemNameText.text = "These ingredients do not work together!";
+        }
+
+        yield return new WaitForSeconds(2);
         if (PotionInstantiate != null)
         {
             PotionInstantiate();
@@ -52,14 +66,9 @@ public class PotionEventManager : MonoBehaviour
             potionEquipped = true;
             Debug.Log("Potion Equipped!");
         }
-        yield return new WaitForSeconds(1);
 
         RaycastManager.instance.chosenElements.RemoveAt(1);
         RaycastManager.instance.chosenElements.RemoveAt(0);
-
-
-        yield return new WaitForSeconds(2);
-
         RaycastManager.instance.creatingPotion = false;
 
     }
