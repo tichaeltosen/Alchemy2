@@ -103,7 +103,7 @@ public class RaycastManager : MonoBehaviour
             }
 
             //................Chest..........................
-            else if (hit.collider.CompareTag("Chest"))
+            else if (hit.collider.CompareTag("Chest") && !creatingPotion)
             {
                 CrosshairActive();
                 raycastedObj = hit.collider.gameObject;
@@ -119,7 +119,7 @@ public class RaycastManager : MonoBehaviour
             }
             //.............Make Potion...................
 
-            else if (hit.collider.CompareTag("MakePotion"))
+            else if (hit.collider.CompareTag("MakePotion") && !creatingPotion)
             {
                 CrosshairActive();
                 raycastedObj = hit.collider.gameObject;
@@ -161,7 +161,7 @@ public class RaycastManager : MonoBehaviour
             }
 
             //.....................Texts........................
-            else if (hit.collider.CompareTag("Text"))
+            else if (hit.collider.CompareTag("Text") && !creatingPotion)
             {
                 CrosshairActive();
                 raycastedObj = hit.collider.gameObject;
@@ -173,6 +173,19 @@ public class RaycastManager : MonoBehaviour
 
                 }
 
+            }
+            //..................Exit Door........
+            else if(hit.collider.CompareTag("Exit") && !creatingPotion)
+            {
+                CrosshairActive();
+                raycastedObj = hit.collider.gameObject;
+                itemNameText.text = raycastedObj.GetComponent<ExitMessage>().exitName;
+
+                if (Input.GetMouseButtonDown(0))
+                {
+                    raycastedObj.GetComponent<ExitMessage>().Locked();
+
+                }
             }
 
         }

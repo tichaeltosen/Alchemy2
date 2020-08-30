@@ -14,8 +14,16 @@ public class PotionEffects : MonoBehaviour
     [HideInInspector]
     public int time = 0;
 
+    [FMODUnity.EventRef]
+    public string fmodEvent;
 
     private float startingHeight;
+
+    FMOD.Studio.EventInstance PotionMusic;
+
+    [SerializeField]
+    [Range(0f, 1f)]
+    private float volume;
 
 
     private void Awake()
@@ -23,9 +31,28 @@ public class PotionEffects : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+        PotionMusic = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
+        PotionMusic.start();
+
+    }
+
+    
+
     public void TimeCount()
     {
         time += 1;
+    }
+
+    public void Update()
+    {
+        //PotionMusic.setParameterByName("Ritual", volume);
+        if (!potionEffectActive)
+        {
+            PotionMusic.setParameterByName("PVolume", 0f);
+        }
+
     }
 
     public void Moon()
@@ -82,6 +109,19 @@ public class PotionEffects : MonoBehaviour
         }
 
        
+
+    }
+
+    public void StartPotionMusic()
+    {
+        PotionMusic.setParameterByName("PVolume", 1f);
+
+    }
+
+    public void StartRitualMusic()
+    {
+        PotionMusic.setParameterByName("Ritual", 1f);
+        Debug.Log("Starting Ritual Music");
 
     }
 

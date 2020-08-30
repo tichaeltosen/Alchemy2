@@ -18,6 +18,7 @@ public class BalanceScale : MonoBehaviour
         Debug.Log("Hidden Door Revealed");
         unbalanced.SetActive(false);
         balanced.SetActive(true);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Scale Balance");
         UsePotion.Effect -= Balance;
 
     }

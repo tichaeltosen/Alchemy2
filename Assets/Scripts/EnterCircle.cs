@@ -15,6 +15,7 @@ public class EnterCircle : MonoBehaviour
         if (other.CompareTag("Player") && GameManager.instance.sulfurState == true)
         {
             GameManager.instance.circleStatus = true;
+            gameObject.GetComponent<BoxCollider>().enabled = false;
         }
 
     }

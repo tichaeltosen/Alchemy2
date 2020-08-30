@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{705bc9cd-b6dc-4c48-9216-fcbb36f9f5e3}">
+		<property name="name">
+			<value>Potion</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0f119afa-c6a6-4aaf-8b8c-76ea60cb203f}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{5fe199e8-8d11-4e4a-99c4-1380cc37f286}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{5fe199e8-8d11-4e4a-99c4-1380cc37f286}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

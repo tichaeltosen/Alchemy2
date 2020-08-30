@@ -37,10 +37,17 @@ public class ItemProperties : MonoBehaviour
     private bool rStatus;
     private bool lStatus;
 
+    FMOD.Studio.EventInstance ritual;
+
 
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        ritual = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Main Loop");
     }
 
     public void Interaction()
@@ -83,7 +90,12 @@ public class ItemProperties : MonoBehaviour
             {
                 //
                 GameManager.instance.sulfurState = true;
+                PotionEffects.instance.StartRitualMusic();
                 EndState.instance.ShowThird();
+                ritual.setParameterByName("Ritual", 1f);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Bell");
+
+
             }
 
             //break potion spell if active when new element found
@@ -126,6 +138,8 @@ public class ItemProperties : MonoBehaviour
         //...............Chest....................
         else if (chest && lStatus)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Interactable/Chest Locked");
+
             if (itemName == "Strength Chest")
             {
                 RaycastManager.instance.itemNameText.text = "The lid is stuck. If only you were a little stronger...";

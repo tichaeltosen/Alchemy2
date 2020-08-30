@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{1236357d-34ef-4d68-aa90-a6f05db3c418}">
+		<property name="assetPath">
+			<value>AlchemyMusic DarkPathEnd.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>94.426258503401357</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b734c849-b682-419f-8c74-545e527a41bd}</destination>
+		</relationship>
+	</object>
+</objects>

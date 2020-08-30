@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{195a1c67-8aab-4428-87e5-8e9c5ed11226}">
+		<property name="assetPath">
+			<value>DarkEnding_ExitDoor_TornOpen.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>3.252312925170068</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b734c849-b682-419f-8c74-545e527a41bd}</destination>
+		</relationship>
+	</object>
+</objects>
