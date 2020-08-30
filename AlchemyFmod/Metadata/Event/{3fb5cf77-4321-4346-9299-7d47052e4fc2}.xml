@@ -60,7 +60,7 @@
 	<object class="MarkerTrack" id="{73e4eb0f-d70d-4d6e-8619-de4e1e8c1898}" />
 	<object class="GroupTrack" id="{3267af2d-a755-484e-94f8-2d35b123b2b3}">
 		<relationship name="modules">
-			<destination>{6d88ae48-6f43-4b62-a62c-86b1a1122fa3}</destination>
+			<destination>{7fa5770a-45c8-41e1-972d-8d012e07fa90}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{c369bf4e-2945-4b6c-a67b-49e982aff22f}</destination>
@@ -68,7 +68,7 @@
 	</object>
 	<object class="Timeline" id="{4867a52b-3aa9-464e-a711-754cfc9dc8f2}">
 		<relationship name="modules">
-			<destination>{6d88ae48-6f43-4b62-a62c-86b1a1122fa3}</destination>
+			<destination>{7fa5770a-45c8-41e1-972d-8d012e07fa90}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{d0744ba3-54bf-45b9-b4fd-a898fd69ae9c}</destination>
@@ -91,12 +91,12 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4f6610a6-79c9-48cf-9339-4a4c04647b74}" />
-	<object class="SingleSound" id="{6d88ae48-6f43-4b62-a62c-86b1a1122fa3}">
+	<object class="SingleSound" id="{7fa5770a-45c8-41e1-972d-8d012e07fa90}">
 		<property name="length">
-			<value>22.767165532879819</value>
+			<value>22.75</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{cb2ecf1b-4b1c-4fd9-990c-9ebce4fb7d78}</destination>
+			<destination>{cb760232-0d9e-493c-8b99-29131facd8b0}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{c369bf4e-2945-4b6c-a67b-49e982aff22f}">
@@ -118,7 +118,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>22.767165532879819</value>
+			<value>22.75</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{4867a52b-3aa9-464e-a711-754cfc9dc8f2}</destination>
@@ -144,7 +144,7 @@
 	<object class="MixerBusFader" id="{0e242ba0-e425-454b-ab2e-a89d7367b505}" />
 	<object class="SpatialiserEffect" id="{f9935894-3db5-4285-97b1-f1eb2a03579a}">
 		<property name="maximumDistance">
-			<value>60</value>
+			<value>15</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{fb1c5a52-c8b0-45d8-9267-e870597533b0}" />
