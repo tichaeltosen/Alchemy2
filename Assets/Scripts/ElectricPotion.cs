@@ -39,6 +39,8 @@ public class ElectricPotion : MonoBehaviour
         PotionEffects.instance.potionEffectActive = true;
         chestStatus.isLocked = false;
         PartElectric.instance.ElectricParticle();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/Electric");
+
 
         while (PotionEffects.instance.time != effectTime)
         {
@@ -49,6 +51,8 @@ public class ElectricPotion : MonoBehaviour
                 chestStatus.isLocked = true;
                 PotionEffects.instance.potionEffectActive = false;
                 PotionEffects.instance.breakRoutine = false;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/End Potion");
+
                 yield break;
             }
         }

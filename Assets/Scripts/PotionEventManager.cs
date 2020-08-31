@@ -53,6 +53,7 @@ public class PotionEventManager : MonoBehaviour
         }else
         {
             RaycastManager.instance.itemNameText.text = "These ingredients do not work together!";
+
         }
 
         yield return new WaitForSeconds(2);
@@ -64,6 +65,7 @@ public class PotionEventManager : MonoBehaviour
         if (potionReturn != "None")
         {
             potionEquipped = true;
+
             Debug.Log("Potion Equipped!");
         }
 

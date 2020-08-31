@@ -51,6 +51,8 @@ public class PlayerSlow : MonoBehaviour
                 playerMove.speed = normalSpeed;
                 PotionEffects.instance.potionEffectActive = false;
                 PotionEffects.instance.breakRoutine = false;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/End Potion");
+
                 yield break;
             }
         }

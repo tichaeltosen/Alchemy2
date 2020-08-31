@@ -92,6 +92,7 @@ public class InstantiatePotion : MonoBehaviour
 
             case "None":
                 Smoke.instance.SmokeParticle();
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/Smoke");
                 break;
         }
 
@@ -101,6 +102,7 @@ public class InstantiatePotion : MonoBehaviour
     {
         GameObject newObj = Instantiate(name, player.position + player.transform.forward * distance, player.rotation, player);
         newObj.gameObject.AddComponent<UsePotion>();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/Particle One");
         GameObject particle = Instantiate(particleEffect, player.position + player.transform.forward * distance, particleEffect.transform.rotation, player);
         Destroy(particle, 1.0f);
     }

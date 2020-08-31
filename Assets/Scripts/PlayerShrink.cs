@@ -41,6 +41,8 @@ public class PlayerShrink : MonoBehaviour
     {
         PotionEffects.instance.time = 0;
         PotionEffects.instance.potionEffectActive = true;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/Shrink");
+
 
         for (float t = 0.01f; t < fadeTime; t += 0.1f)
         {
@@ -58,6 +60,7 @@ public class PlayerShrink : MonoBehaviour
                 StartCoroutine(Grow());
                 PotionEffects.instance.potionEffectActive = false;
                 PotionEffects.instance.breakRoutine = false;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/End Potion");
                 yield break;
             }
         }
