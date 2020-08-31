@@ -682,10 +682,10 @@ MonoBehaviour:
   m_Text: 'mercury - m. rosen (programming, sound design & implementation)
 
     salt
-    - d. bernstein (puzzle design, text)
+    - d. bernstein (puzzle design, texts)
 
-    sulfur - s. mandel (game design, art,
-    music, & sound effects)'
+    sulfur - s. mandel (game and level
+    design, art, music & sound effects)'
 --- !u!222 &959485208
 CanvasRenderer:
   m_ObjectHideFlags: 0
