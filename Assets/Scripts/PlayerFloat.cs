@@ -37,6 +37,8 @@ public class PlayerFloat : MonoBehaviour
         PotionEffects.instance.time = 0;
         PotionEffects.instance.potionEffectActive = true;
         pMove.Float();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/Float");
+
 
         while (PotionEffects.instance.time != effectTime)
         {
@@ -47,6 +49,10 @@ public class PlayerFloat : MonoBehaviour
                 pMove.Fall();
                 PotionEffects.instance.potionEffectActive = false;
                 PotionEffects.instance.breakRoutine = false;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/End Potion");
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/Fall");
+
+
                 yield break;
             }
         }

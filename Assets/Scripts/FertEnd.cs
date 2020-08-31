@@ -53,6 +53,8 @@ public class FertEnd : MonoBehaviour
             {
                 PotionEffects.instance.potionEffectActive = false;
                 PotionEffects.instance.breakRoutine = false;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/End Potion");
+
                 yield break;
             }
         }

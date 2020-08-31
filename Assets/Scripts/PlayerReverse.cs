@@ -36,6 +36,7 @@ public class PlayerReverse : MonoBehaviour
         PotionEffects.instance.time = 0;
         PotionEffects.instance.potionEffectActive = true;
         pMovement.Reverse();
+        PotionEffects.instance.DrunkChorusOn();
 
         while (PotionEffects.instance.time != effectTime)
         {
@@ -46,6 +47,10 @@ public class PlayerReverse : MonoBehaviour
                 pMovement.Normal();
                 PotionEffects.instance.potionEffectActive = false;
                 PotionEffects.instance.breakRoutine = false;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/End Potion");
+                PotionEffects.instance.DrunkChorusOff();
+
+
                 yield break;
             }
         }

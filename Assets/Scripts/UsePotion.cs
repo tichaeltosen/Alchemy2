@@ -19,6 +19,8 @@ public class UsePotion : MonoBehaviour
             {
                 Effect();
                 PotEndParticle.instance.PotionParticle();
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/Particle Two");
+
                 if (!RaycastManager.instance.potInteractable)
                 {
                     FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/Potion Drink");

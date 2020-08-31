@@ -108,6 +108,8 @@ public class PotionEffects : MonoBehaviour
                 potionEffectActive = false;
                 pEffect.SetActive(false);
                 breakRoutine = false;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Potions/End Potion");
+
                 yield break;
             }
         }
@@ -136,6 +138,18 @@ public class PotionEffects : MonoBehaviour
     public void StartLightMusic()
     {
         PotionMusic.setParameterByName("Light", 1f);
+
+    }
+
+    public void DrunkChorusOn()
+    {
+        PotionMusic.setParameterByName("Drunk", 1f);
+
+    }
+
+    public void DrunkChorusOff()
+    {
+        PotionMusic.setParameterByName("Drunk", 0f);
 
     }
 
