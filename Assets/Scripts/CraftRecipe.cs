@@ -19,7 +19,7 @@ public class CraftRecipe : MonoBehaviour
     {
         recipes.Add(new Recipes("Sun", new List<string>() { "Gold", "Mercury" }));
         recipes.Add(new Recipes("Moon", new List<string>() { "Silver", "Mercury" }));
-        recipes.Add(new Recipes("Feather", new List<string>() { "Salt", "Silver" }));
+        recipes.Add(new Recipes("Antigravity", new List<string>() { "Salt", "Silver" }));
         recipes.Add(new Recipes("Strength", new List<string>() { "Iron", "Salt" }));
         recipes.Add(new Recipes("Fertility", new List<string>() { "Copper", "Iron" }));
         recipes.Add(new Recipes("Shrinking", new List<string>() { "Copper", "Tin" }));
