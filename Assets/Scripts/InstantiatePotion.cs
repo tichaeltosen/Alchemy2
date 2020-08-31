@@ -36,7 +36,7 @@ public class InstantiatePotion : MonoBehaviour
                 UsePotion.Effect += PotionEffects.instance.Sun;
                 break;
 
-            case "Feather":
+            case "Antigravity":
                 InstPotion(feather);
                 UsePotion.Effect += PlayerFloat.instance.Feather;
                 break;

@@ -116,7 +116,7 @@ public class ItemProperties : MonoBehaviour
             {
                 UsePotion.Effect += HiddenDoor.instance.ShowDoor;
                 UsePotion.Effect += BalanceScale.instance.Balance;
-            }else if(itemName == "Skull" && potion == "Feather")
+            }else if(itemName == "Skull" && potion == "Antigravity")
             {
                 UsePotion.Effect += HiddenDoor.instance.ShowDoor;
                 UsePotion.Effect += BalanceScale.instance.Balance;
