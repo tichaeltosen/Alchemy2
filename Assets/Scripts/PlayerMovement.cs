@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Footsteps", GetComponent<Transform>().position);
                     timer = 0f;
-                    footStepSpeed = Random.Range(0.6f, 0.8f);
+                    footStepSpeed = Random.Range(0.45f, 0.65f);
 
                 }
 
