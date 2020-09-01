@@ -46,15 +46,20 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
-        if(controller.velocity.magnitude > 0f && isGrounded)
+        if(isGrounded)
         {
-            timer += Time.deltaTime;
-            if (timer > footStepSpeed)
+            if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
             {
-                FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Footsteps", GetComponent<Transform>().position);
-                timer = 0f;
+                timer += Time.deltaTime;
+                if (timer > footStepSpeed)
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Footsteps", GetComponent<Transform>().position);
+                    timer = 0f;
+                    footStepSpeed = Random.Range(0.6f, 0.8f);
 
-            }
+                }
+
+            }  
         }
 
 
