@@ -147,16 +147,23 @@ public class RaycastManager : MonoBehaviour
             }
             //.............End Potion...................
 
-            else if (hit.collider.CompareTag("End-Potion") && PotionEffects.instance.potionEffectActive)
+            else if (hit.collider.CompareTag("End-Potion"))
             {
-                CrosshairActive();
                 raycastedObj = hit.collider.gameObject;
-                itemNameText.text = "Click To End Potion";
-                if (Input.GetMouseButtonDown(0))
+                itemNameText.text = "Potion antidote";
+                if (PotionEffects.instance.potionEffectActive)
                 {
-                    raycastedObj.GetComponent<ItemProperties>().Interaction();
+                    CrosshairActive();
+                    itemNameText.text = "End potion";
 
-                }
+
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        raycastedObj.GetComponent<ItemProperties>().Interaction();
+
+                    }
+
+                }     
 
             }
 
