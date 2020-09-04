@@ -100,15 +100,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449893814246083805}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 4
-  maxIntensity: 7
-  smoothing: 20
+  minIntensity: 1
+  maxIntensity: 6
+  smoothing: 12
 --- !u!1 &971128149000652374
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +154,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.9529412, g: 0.81960785, b: 0.45490196, a: 1}
   m_Intensity: 1.1
-  m_Range: 9.45
+  m_Range: 12
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
@@ -263,7 +263,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.9529412, g: 0.81960785, b: 0.45490196, a: 1}
   m_Intensity: 1.1
-  m_Range: 9.45
+  m_Range: 12
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
@@ -372,7 +372,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.9529412, g: 0.81960785, b: 0.45490196, a: 1}
   m_Intensity: 1.1
-  m_Range: 9.45
+  m_Range: 12
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
@@ -481,7 +481,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.9529412, g: 0.81960785, b: 0.45490196, a: 1}
   m_Intensity: 1.1
-  m_Range: 9.45
+  m_Range: 12
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
@@ -590,7 +590,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.9529412, g: 0.81960785, b: 0.45490196, a: 1}
   m_Intensity: 1.1
-  m_Range: 9.45
+  m_Range: 12
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
@@ -699,7 +699,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.9529412, g: 0.81960785, b: 0.45490196, a: 1}
   m_Intensity: 1.1
-  m_Range: 9.45
+  m_Range: 12
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
@@ -808,7 +808,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.9529412, g: 0.81960785, b: 0.45490196, a: 1}
   m_Intensity: 1.1
-  m_Range: 9.45
+  m_Range: 12
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
@@ -917,7 +917,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.9529412, g: 0.81960785, b: 0.45490196, a: 1}
   m_Intensity: 1.1
-  m_Range: 9.45
+  m_Range: 12
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
@@ -1081,15 +1081,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318020452326052200}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 4
-  maxIntensity: 7
-  smoothing: 20
+  minIntensity: 1
+  maxIntensity: 6
+  smoothing: 12
 --- !u!1 &1821300323071963912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,15 +1286,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075072547005926543}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 4
-  maxIntensity: 7
-  smoothing: 20
+  minIntensity: 1
+  maxIntensity: 6
+  smoothing: 12
 --- !u!1 &5068757929667178372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,15 +1395,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5068757929667178372}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 4
-  maxIntensity: 7
-  smoothing: 20
+  minIntensity: 1
+  maxIntensity: 6
+  smoothing: 12
 --- !u!1 &5704388506842163814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,15 +1504,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5704388506842163814}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 4
-  maxIntensity: 7
-  smoothing: 20
+  minIntensity: 1
+  maxIntensity: 6
+  smoothing: 12
 --- !u!1 &5991490682038056134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,15 +1613,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5991490682038056134}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 4
-  maxIntensity: 7
-  smoothing: 20
+  minIntensity: 1
+  maxIntensity: 6
+  smoothing: 12
 --- !u!1 &8275830974022261979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,15 +1722,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8275830974022261979}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 4
-  maxIntensity: 7
-  smoothing: 20
+  minIntensity: 1
+  maxIntensity: 6
+  smoothing: 12
 --- !u!1 &8981764979184025433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,12 +1831,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8981764979184025433}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 4
-  maxIntensity: 7
-  smoothing: 20
+  minIntensity: 1
+  maxIntensity: 6
+  smoothing: 12
