@@ -72,7 +72,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -119,7 +119,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -406,7 +406,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -520,6 +520,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-8272851385026742293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Loop/Light
+  m_EditorClassIdentifier: 
+  Name: Light
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-8270375626561400830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,6 +640,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-8134461971555720224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Loop/PVolume
+  m_EditorClassIdentifier: 
+  Name: PVolume
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-8115187548780256266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,7 +728,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1045,7 +1079,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1163,7 +1197,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -1279,7 +1313,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1377,7 +1411,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1669,7 +1703,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1708,6 +1742,23 @@ MonoBehaviour:
   m_Name: parameter:/Main Loop/Ritual
   m_EditorClassIdentifier: 
   Name: Ritual
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-6848696532129542493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Loop/Dark
+  m_EditorClassIdentifier: 
+  Name: Dark
   Min: 0
   Max: 1
   Default: 0
@@ -1767,7 +1818,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2006,6 +2057,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-6514648025063541694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637347226510000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-6500544422131673312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2030,7 +2099,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2202,7 +2271,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2406,7 +2475,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -2934,7 +3003,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3294,7 +3363,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3323,7 +3392,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -3525,7 +3594,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3679,7 +3748,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3760,7 +3829,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4254,7 +4323,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -5101,6 +5170,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-1643743150962950391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Interactable.bank
+  m_EditorClassIdentifier: 
+  Path: AlchemyFmod/Build/Desktop/Interactable.bank
+  SubDir: 
+  lastModified: 637347226510000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1569808438466141210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5846,8 +5933,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 3622963958170582510}
-  - {fileID: 670109183783016499}
-  - {fileID: -7520378587198056674}
+  - {fileID: -1643743150962950391}
+  - {fileID: -6514648025063541694}
   EditorEvents:
   - {fileID: -7807721480956651065}
   - {fileID: -6500544422131673312}
@@ -5888,12 +5975,12 @@ MonoBehaviour:
   - {fileID: -7985755379604662661}
   - {fileID: 6763468807570167272}
   EditorParameters:
-  - {fileID: 9038341959640901219}
+  - {fileID: 6958101647729391308}
   MasterBanks:
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   StringsBanks:
   - {fileID: 3622963958170582510}
-  stringsBankWriteTime: 637344995580000000
+  stringsBankWriteTime: 637347226510000000
   cacheVersion: 3
 --- !u!114 &14664582614571879
 MonoBehaviour:
@@ -6331,7 +6418,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -6373,6 +6460,23 @@ MonoBehaviour:
   lastModified: 637343748090000000
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &631223966429662992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Loop/Ritual
+  m_EditorClassIdentifier: 
+  Name: Ritual
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &632706628803731172
 MonoBehaviour:
@@ -6501,7 +6605,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -6684,7 +6788,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -6818,7 +6922,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7196,7 +7300,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -7240,7 +7344,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7527,7 +7631,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7626,7 +7730,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -8261,7 +8365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: AlchemyFmod/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637344995580000000
+  lastModified: 637347226510000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -8362,16 +8466,16 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8912931539557937944}
-  - {fileID: 9117304211346780422}
-  - {fileID: 7766231412068670414}
-  - {fileID: -8280204292512838940}
-  - {fileID: -6856201330828148836}
+  - {fileID: -8272851385026742293}
+  - {fileID: -8134461971555720224}
+  - {fileID: 5998024637643302035}
+  - {fileID: -6848696532129542493}
+  - {fileID: 631223966429662992}
   MinDistance: 0
   MaxDistance: 0
   Length: 94426
@@ -8553,7 +8657,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -9421,7 +9525,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -9446,6 +9550,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &5998024637643302035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Main Loop/Drunk
+  m_EditorClassIdentifier: 
+  Name: Drunk
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &6027054856983269848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9555,7 +9676,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -9986,7 +10107,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -10122,6 +10243,23 @@ MonoBehaviour:
   lastModified: 637341136650000000
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &6958101647729391308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: Potion
+  m_EditorClassIdentifier: 
+  Name: Potion
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &6994513508852200413
 MonoBehaviour:
@@ -10566,7 +10704,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -10820,7 +10958,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -10919,7 +11057,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -11069,7 +11207,7 @@ MonoBehaviour:
   - {fileID: -5375229392125587008}
   - {fileID: 6051687070927141195}
   - {fileID: -4585969726700599713}
-  - {fileID: -7520378587198056674}
+  - {fileID: -6514648025063541694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
