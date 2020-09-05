@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FramRate : MonoBehaviour
+public class FrameRate : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
         {
             QualitySettings.vSyncCount = 0;  // VSync must be disabled
-            Application.targetFrameRate = 45;
+            Application.targetFrameRate = 60;
         }
     }
 
