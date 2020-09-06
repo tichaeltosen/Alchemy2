@@ -106,9 +106,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 0.5
+  minIntensity: 1.25
   maxIntensity: 2.5
-  smoothing: 30
+  smoothing: 45
 --- !u!1 &141215528590269212
 GameObject:
   m_ObjectHideFlags: 0
