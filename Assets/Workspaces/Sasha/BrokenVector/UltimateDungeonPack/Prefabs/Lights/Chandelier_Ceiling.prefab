@@ -215,8 +215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 1.25
-  maxIntensity: 2.5
+  minIntensity: 0.25
+  maxIntensity: 1.75
   smoothing: 45
 --- !u!1 &971128149059229092
 GameObject:
@@ -324,8 +324,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 1.25
-  maxIntensity: 2.5
+  minIntensity: 0.25
+  maxIntensity: 1.75
   smoothing: 45
 --- !u!1 &971128149960237013
 GameObject:
@@ -433,8 +433,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 1.25
-  maxIntensity: 2.5
+  minIntensity: 0.25
+  maxIntensity: 1.75
   smoothing: 45
 --- !u!1 &971128150144981085
 GameObject:
@@ -542,8 +542,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 1.25
-  maxIntensity: 2.5
+  minIntensity: 0.25
+  maxIntensity: 1.75
   smoothing: 45
 --- !u!1 &971128150352308038
 GameObject:
@@ -651,8 +651,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 1.25
-  maxIntensity: 2.5
+  minIntensity: 0.25
+  maxIntensity: 1.75
   smoothing: 45
 --- !u!1 &971128150372381497
 GameObject:
@@ -760,8 +760,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 1.25
-  maxIntensity: 2.5
+  minIntensity: 0.25
+  maxIntensity: 1.75
   smoothing: 45
 --- !u!1 &971128150403798110
 GameObject:
@@ -869,8 +869,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 1.25
-  maxIntensity: 2.5
+  minIntensity: 0.25
+  maxIntensity: 1.75
   smoothing: 45
 --- !u!1 &971128150668637898
 GameObject:
@@ -978,8 +978,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 1.25
-  maxIntensity: 2.5
+  minIntensity: 0.25
+  maxIntensity: 1.75
   smoothing: 45
 --- !u!1 &1318020452326052200
 GameObject:

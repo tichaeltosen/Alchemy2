@@ -215,9 +215,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 1.25
-  maxIntensity: 2.5
-  smoothing: 45
+  minIntensity: 0.25
+  maxIntensity: 2
+  smoothing: 30
 --- !u!1 &1092565790552817708
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,9 +433,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 1.25
-  maxIntensity: 2.5
-  smoothing: 45
+  minIntensity: 0.25
+  maxIntensity: 2
+  smoothing: 30
 --- !u!1 &1092565791317020015
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,9 +542,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 0}
-  minIntensity: 1.25
-  maxIntensity: 2.5
-  smoothing: 45
+  minIntensity: 0.25
+  maxIntensity: 2
+  smoothing: 30
 --- !u!1 &1092565791406690643
 GameObject:
   m_ObjectHideFlags: 0
