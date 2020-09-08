@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 0}
+  light: {fileID: 971128149960237002}
   minIntensity: 0.25
   maxIntensity: 1.75
   smoothing: 45
@@ -650,7 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 0}
+  light: {fileID: 971128150352308039}
   minIntensity: 0.25
   maxIntensity: 1.75
   smoothing: 45
@@ -868,7 +868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 0}
+  light: {fileID: 971128150403798111}
   minIntensity: 0.25
   maxIntensity: 1.75
   smoothing: 45
@@ -977,7 +977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 0}
+  light: {fileID: 971128150668637899}
   minIntensity: 0.25
   maxIntensity: 1.75
   smoothing: 45

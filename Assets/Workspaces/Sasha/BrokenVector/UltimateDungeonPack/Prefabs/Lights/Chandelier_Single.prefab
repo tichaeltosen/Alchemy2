@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd188fdcd3344b958210eb117711f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 0}
+  light: {fileID: 141215528556840473}
   minIntensity: 0.25
   maxIntensity: 2
   smoothing: 30
