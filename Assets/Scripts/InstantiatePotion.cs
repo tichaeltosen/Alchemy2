@@ -82,7 +82,7 @@ public class InstantiatePotion : MonoBehaviour
 
                 break;
 
-            case "Duality":
+            case "Light":
                 InstPotion(fertility);
                 UsePotion.Effect += PotionEffects.instance.Fertility;
                 UsePotion.Effect += FertEnd.instance.LightEnd;
