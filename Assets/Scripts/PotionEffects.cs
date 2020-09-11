@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PotionEffects : MonoBehaviour
 {
-    public GameObject moonEffect, sunEffect, fertilityEffect;
+    public GameObject moonEffect, sunEffect, fertilityEffect, charGlow;
     public float effectTime = 30;
     public static PotionEffects instance;
     [HideInInspector]
@@ -85,6 +85,7 @@ public class PotionEffects : MonoBehaviour
         if (!RaycastManager.instance.isPotionObject)
         {
             StartCoroutine(Reveal(fertilityEffect));
+            StartCoroutine(Reveal(charGlow));
 
         }
         UsePotion.Effect -= Fertility;
