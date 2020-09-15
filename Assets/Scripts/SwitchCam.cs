@@ -2,8 +2,9 @@
 
 public class SwitchCam : MonoBehaviour {
 
-public GameObject player, freecam, reticle;
+public GameObject player, freecam, reticle, text, testElements;
 public bool reticleActive = true;
+public bool testElementsActive = false;
 // private int cameraNumber = 0;
 
 void Update()
@@ -20,6 +21,11 @@ void Update()
         {
             ToggleReticle();
         }
+        if (Input.GetKeyDown("t"))
+        {
+            ToggleTestElements();
+        }
+
 
     }
         
@@ -41,14 +47,32 @@ void Update()
             if (reticleActive == true) {
                 Debug.Log("reticle off");
                 reticle.SetActive(false);
+                text.SetActive(false);
                 reticleActive = false;
             }
             else {
                 Debug.Log("reticle on");
-                reticle.SetActive(true);
+                reticle.SetActive(true);                
+                text.SetActive(true);
                 reticleActive = true;
             }
 
         }
+
+        public void ToggleTestElements() {
+            
+            if (testElementsActive == true) {
+                Debug.Log("test Elements Off");
+                testElements.SetActive(false);
+                testElementsActive = false;
+            }
+            else {
+                Debug.Log("test Elements On");
+                testElements.SetActive(true);
+                testElementsActive = true;
+            }
+
+        }
+
 
 }
