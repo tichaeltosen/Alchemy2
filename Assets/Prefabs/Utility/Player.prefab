@@ -54,7 +54,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5674787038617591022}
   - component: {fileID: 5674787038617591017}
-  - component: {fileID: 5674787038617591016}
   - component: {fileID: 5674787038617591023}
   - component: {fileID: 5674787038617591020}
   m_Layer: 0
@@ -121,14 +120,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &5674787038617591016
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5674787038617591019}
-  m_Enabled: 1
 --- !u!114 &5674787038617591023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,6 +135,8 @@ MonoBehaviour:
   itemNameText: {fileID: 0}
   creatingPotion: 0
   chosenElements: []
+  isPotionObject: 0
+  potInteractable: 0
   rayLength: 13
   newLayerMask:
     serializedVersion: 2
@@ -162,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 120
+  mouseLocked: 0
   playerBody: {fileID: 5674787039241725521}
 --- !u!1 &5674787039097743950
 GameObject:
@@ -343,6 +337,8 @@ MonoBehaviour:
   gravity: -9.81
   floatSpeed: -3
   jumpHeight: 3
+  playerLocked: 0
+  footStepSpeed: 1
   groundCheck: {fileID: 5674787037863767147}
   groundDistance: 0.4
   groundMask:
@@ -376,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f94f324e9a3942278d7d4761ecbcc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cControl: {fileID: 5674787039241725520}
+  pHeight: {fileID: 0}
   fadeTime: 2
   lerpNumber: 0
   shrinkHeight: 2
