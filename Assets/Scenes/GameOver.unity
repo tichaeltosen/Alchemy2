@@ -679,13 +679,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.4
-  m_Text: 'mercury - m. rosen (programming, sound design & implementation)
+  m_Text: 'mercury - m. rosen (programming, sound design and implementation)
 
     salt
     - d. bernstein (puzzle design, texts)
 
-    sulfur - s. mandel (game and level
-    design, art, music & sound effects)'
+    sulfur - s. mandel (game design, art,
+    music, sound effects)'
 --- !u!222 &959485208
 CanvasRenderer:
   m_ObjectHideFlags: 0
