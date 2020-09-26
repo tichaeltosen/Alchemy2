@@ -224,10 +224,10 @@ QualitySettings:
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Custom
-    pixelLightCount: 12
-    shadows: 0
-    shadowResolution: 3
-    shadowProjection: 0
+    pixelLightCount: 9
+    shadows: 2
+    shadowResolution: 2
+    shadowProjection: 1
     shadowCascades: 4
     shadowDistance: 128
     shadowNearPlaneOffset: 2
