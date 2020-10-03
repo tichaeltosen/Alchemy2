@@ -2,16 +2,11 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0x0.
 [LOG] SystemI::init                            : Initialize version=20010 (110198), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD Core Audio Output'
-[LOG] OutputCoreAudio::init                    : Output running 2 channels at 44100Hz sample rate.
+[LOG] OutputCoreAudio::init                    : Output running 2 channels at 48000Hz sample rate.
 [LOG] OutputCoreAudio::init                    : Maximum hardware read size: 1024 samples, Software buffer size: 512 samples, Number of software buffers: 4.
-[WRN] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-<<<<<<< Updated upstream
-[LOG] AsyncManager::init                       : manager 0x7f99fafcc408 isAsync 0 updatePeriod 0.02
-=======
-[LOG] AsyncManager::init                       : manager 0x7fbf94a35808 isAsync 0 updatePeriod 0.02
->>>>>>> Stashed changes
+[LOG] AsyncManager::init                       : manager 0x7fc058f64408 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -23,41 +18,88 @@
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-<<<<<<< Updated upstream
-[LOG] SoundI::release                          : RoomTone (0x7f99fa62b4a8)
-[LOG] SoundI::release                          :     RoomTone (0x7f99fa13da38)
-[LOG] SoundI::release                          :     RoomTone (0x7f99fa12e8c8)
-[LOG] SoundI::release                          : Drops (0x7f99fa630e18)
-[LOG] SoundI::release                          :     Drops (0x7f99f90ca9b8)
-[LOG] SoundI::release                          :     Drops (0x7f99f90cacf8)
-[LOG] SoundI::release                          : AlchemyMusic MainAmbientLoop (0x7f99f9078338)
-[LOG] SoundI::release                          :     AlchemyMusic MainAmbientLoop (0x7f99fa75d8c8)
-[LOG] SoundI::release                          :     AlchemyMusic MainAmbientLoop (0x7f99fa75db28)
-[LOG] SoundI::release                          : AlchemyMusic LightPathEnd (0x7f99f9078ca8)
-[LOG] SoundI::release                          :     AlchemyMusic LightPathEnd (0x7f99fa75cf08)
-[LOG] SoundI::release                          :     AlchemyMusic LightPathEnd (0x7f99fa75d168)
-[LOG] SoundI::release                          : AlchemyMusic DarkPathEnd (0x7f99f9078818)
-[LOG] SoundI::release                          :     AlchemyMusic DarkPathEnd (0x7f99fa75c818)
-[LOG] SoundI::release                          :     AlchemyMusic DarkPathEnd (0x7f99fa75c9a8)
-[LOG] SoundI::release                          : AlchemyMusic FinalRitual (0x7f99f9079e88)
-[LOG] SoundI::release                          :     AlchemyMusic FinalRitual (0x7f99fa75bf28)
-[LOG] SoundI::release                          :     AlchemyMusic FinalRitual (0x7f99fa75c0b8)
-[LOG] SoundI::release                          : AlchemyMusic PotionEffectFadeIn (0x7f99f90799f8)
-[LOG] SoundI::release                          :     AlchemyMusic PotionEffectFadeIn (0x7f99fa75b838)
-[LOG] SoundI::release                          :     AlchemyMusic PotionEffectFadeIn (0x7f99fa75b9c8)
-[LOG] SoundI::release                          :  (0x7f99fa4c6118)
-[LOG] SoundI::release                          :     fire (0x7f99fa4edf38)
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fc0594f9f58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fc0594f9f58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fc05c4e67a8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fc05c4e67a8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fc0594fb418
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fc0594fb418
+[LOG] SystemI::createSound                     : filename = AlchemyFmod/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7fc059814a78 : node = 0x7fc0598b5940
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7fc05c259ed8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7fc059814a78
+[LOG] SystemI::createSoundInternal             :     Create name='AlchemyFmod/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8595520
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 71360
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7fc0598b5a50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Drops', format=2, channels=2, frequency=48000, lengthbytes=345216, lengthpcm=1320000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.536407.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7fc059814a78
+[LOG] SoundI::getSubSound                      : sound 0x7fc059814a78.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Drops (0x7fc05c2c73a8)
+[LOG] SoundI::release                          :     Drops (0x7fc059f1fa88)
+[LOG] SoundI::release                          :     Drops (0x7fc0418abc68)
+[LOG] SoundI::release                          : RoomTone (0x7fc05c33ac28)
+[LOG] SoundI::release                          :     RoomTone (0x7fc0594f9bf8)
+[LOG] SoundI::release                          :     RoomTone (0x7fc0594f9f58)
+[LOG] SoundI::release                          : AlchemyMusic MainAmbientLoop (0x7fc05c3bd128)
+[LOG] SoundI::release                          :     AlchemyMusic MainAmbientLoop (0x7fc05c4e6618)
+[LOG] SoundI::release                          :     AlchemyMusic MainAmbientLoop (0x7fc05c4e67a8)
+[LOG] SoundI::release                          : AlchemyMusic LightPathEnd (0x7fc05c3bcc98)
+[LOG] SoundI::release                          :     AlchemyMusic LightPathEnd (0x7fc05c4e5d28)
+[LOG] SoundI::release                          :     AlchemyMusic LightPathEnd (0x7fc05c4e5eb8)
+[LOG] SoundI::release                          : AlchemyMusic DarkPathEnd (0x7fc05c3bc808)
+[LOG] SoundI::release                          :     AlchemyMusic DarkPathEnd (0x7fc05c4e5638)
+[LOG] SoundI::release                          :     AlchemyMusic DarkPathEnd (0x7fc05c4e57c8)
+[LOG] SoundI::release                          : AlchemyMusic FinalRitual (0x7fc05c3bc378)
+[LOG] SoundI::release                          :     AlchemyMusic FinalRitual (0x7fc0594fb1b8)
+[LOG] SoundI::release                          :     AlchemyMusic FinalRitual (0x7fc0594fb418)
+[LOG] SoundI::release                          : AlchemyMusic PotionEffectFadeIn (0x7fc05c3bbee8)
+[LOG] SoundI::release                          :     AlchemyMusic PotionEffectFadeIn (0x7fc0594fa7f8)
+[LOG] SoundI::release                          :     AlchemyMusic PotionEffectFadeIn (0x7fc0594faa58)
+[LOG] SoundI::release                          : Drops (0x7fc059814a78)
+[LOG] SoundI::release                          :     Drops (0x7fc059eddc38)
+[LOG] SoundI::release                          :     Drops (0x7fc059edddc8)
+[LOG] SoundI::release                          :  (0x7fc059ec77d8)
+[LOG] SoundI::release                          :     Footstep_01 (0x7fc059e5d318)
+[LOG] SoundI::release                          :  (0x7fc059e61398)
+[LOG] SoundI::release                          :     Footstep_02 (0x7fc059e5df28)
+[LOG] SoundI::release                          :  (0x7fc059ec62c8)
+[LOG] SoundI::release                          :     Footstep_03 (0x7fc059e5e538)
+[LOG] SoundI::release                          :  (0x7fc059e8a2e8)
+[LOG] SoundI::release                          :     Footstep_04 (0x7fc059ebbd38)
+[LOG] SoundI::release                          :  (0x7fc059ec4918)
+[LOG] SoundI::release                          :     Footstep_05 (0x7fc059e5ff98)
+[LOG] SoundI::release                          :  (0x7fc059ec7be8)
+[LOG] SoundI::release                          :     Footstep_06 (0x7fc059e5ccd8)
+[LOG] SoundI::release                          :  (0x7fc059e602d8)
+[LOG] SoundI::release                          :     Footstep_07 (0x7fc059e97218)
+[LOG] SoundI::release                          :  (0x7fc059e5fcd8)
+[LOG] SoundI::release                          :     Footstep_08 (0x7fc059e60968)
+[LOG] SoundI::release                          :  (0x7fc059fbed68)
+[LOG] SoundI::release                          :     fire (0x7fc0418162a8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
-=======
->>>>>>> Stashed changes
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-<<<<<<< Updated upstream
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-=======
->>>>>>> Stashed changes
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.
