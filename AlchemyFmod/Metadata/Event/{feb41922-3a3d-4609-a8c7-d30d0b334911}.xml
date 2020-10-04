@@ -106,9 +106,6 @@
 		<relationship name="automationTracks">
 			<destination>{3f2247a0-67a5-47fa-8f01-211acc08c150}</destination>
 		</relationship>
-		<relationship name="modules">
-			<destination>{b8a48913-3bb3-4f1b-9b96-3f8b4cec5246}</destination>
-		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{6f99b4c7-b33a-425a-86cf-7753e1f2ec26}</destination>
 		</relationship>
@@ -119,6 +116,7 @@
 		</relationship>
 		<relationship name="modules">
 			<destination>{15a88377-4580-4eac-857a-0ba7b6267b5b}</destination>
+			<destination>{b8a48913-3bb3-4f1b-9b96-3f8b4cec5246}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{95031867-2c6c-4c2b-b5f8-92d5b741dd1c}</destination>
@@ -162,9 +160,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{7e73f693-689f-4623-a86e-96ae13e60f30}">
-		<property name="volume">
-			<value>-18</value>
-		</property>
 		<relationship name="effectChain">
 			<destination>{43f232b2-7876-4726-98a5-a36d0ca703cc}</destination>
 		</relationship>
@@ -285,14 +280,6 @@
 			<destination>{f231fabd-3e1e-4493-a70b-65a272c64c44}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{b8a48913-3bb3-4f1b-9b96-3f8b4cec5246}">
-		<property name="length">
-			<value>94.426258503401357</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{07b7610b-79b6-48c2-af7a-e6980710036e}</destination>
-		</relationship>
-	</object>
 	<object class="EventMixerGroup" id="{6f99b4c7-b33a-425a-86cf-7753e1f2ec26}">
 		<property name="volume">
 			<value>-10.5</value>
@@ -324,6 +311,14 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{1236357d-34ef-4d68-aa90-a6f05db3c418}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{b8a48913-3bb3-4f1b-9b96-3f8b4cec5246}">
+		<property name="length">
+			<value>94.426258503401357</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{07b7610b-79b6-48c2-af7a-e6980710036e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{95031867-2c6c-4c2b-b5f8-92d5b741dd1c}">
